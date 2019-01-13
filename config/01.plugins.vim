@@ -16,7 +16,6 @@ Plug 'prabirshrestha/vim-lsp'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'tpope/vim-surround'
 Plug 'arakashic/chromatica.nvim'
-Plug 'kassio/neoterm'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 
 call plug#end()
