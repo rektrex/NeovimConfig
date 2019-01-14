@@ -17,5 +17,6 @@ Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'tpope/vim-surround'
 Plug 'arakashic/chromatica.nvim'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
+Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 
 call plug#end()

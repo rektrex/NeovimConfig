@@ -72,6 +72,10 @@ inoremap jj <Esc>`^
 set t_Co=256
 set showmatch
 set lazyredraw
+if has('nvim') || has('termguicolors')
+    set termguicolors
+endif
+colorscheme challenger_deep
 
 "save session
 nnoremap <leader>s :mksession<CR>
