@@ -15,6 +15,7 @@ set hlsearch            "Highlight search result
 set ignorecase          "Ignorecase while searching
 set smartcase           "Ignorecase while searching unless the query has capital letters
 set incsearch           "Incremental search
+set formatoptions-=cro  "Don't continue comments in newline
 
 "Use Ctrl+L to clear the highlighting of hlsearch
 if maparg('<C-L>', 'n') ==# ''
@@ -54,6 +55,7 @@ vnoremap <leader>d "+d
 
 "Autocomplete settings
 set completeopt-=preview
+inoremap <expr> <CR> pumvisible() ? '<C-e><CR>' : '<CR>' 
 
 "Show next 3 lines while scrolling
 if !&scrolloff
@@ -69,7 +71,6 @@ endif
 inoremap jj <Esc>`^
 
 "UI
-set t_Co=256
 set showmatch
 set lazyredraw
 if has('nvim') || has('termguicolors')
