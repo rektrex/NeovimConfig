@@ -15,7 +15,6 @@ set hlsearch            "Highlight search result
 set ignorecase          "Ignorecase while searching
 set smartcase           "Ignorecase while searching unless the query has capital letters
 set incsearch           "Incremental search
-set formatoptions-=cro  "Don't continue comments in newline
 
 "Use Ctrl+L to clear the highlighting of hlsearch
 if maparg('<C-L>', 'n') ==# ''
@@ -80,3 +79,9 @@ colorscheme challenger_deep
 
 "save session
 nnoremap <leader>s :mksession<CR>
+
+"save as sudo
+cnoremap wsu w !env SUDO_ASKPASS=/bin/gnome-ssh-askpass sudo tee > /dev/null %
+
+"Don't continue comments in new line
+autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
