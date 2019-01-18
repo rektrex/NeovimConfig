@@ -18,5 +18,6 @@ Plug 'tpope/vim-surround'
 Plug 'arakashic/chromatica.nvim'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
+Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 
 call plug#end()
