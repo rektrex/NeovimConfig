@@ -79,3 +79,6 @@ let g:semshi#error_sign=v:false
 
 "Vim commentary
 autocmd FileType xdefaults setlocal commentstring=!\ %s
+
+"netrw
+let g:netrw_dirhistmax = 0
