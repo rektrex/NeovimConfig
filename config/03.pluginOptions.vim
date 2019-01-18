@@ -76,3 +76,6 @@ let g:chromatica#responsive_mode=1
 
 "Semshi
 let g:semshi#error_sign=v:false
+
+"Vim commentary
+autocmd FileType xdefaults setlocal commentstring=!\ %s
