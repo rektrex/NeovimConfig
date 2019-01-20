@@ -2,7 +2,10 @@ let mapleader="\<SPACE>"
 
 set showmatch           "Show matching brackets
 set number              "Show line numbers
-set textwidth=80        "Set max width before wrapping to 80 chars
+set textwidth=0         "Prevent hard-wrap text
+set wrapmargin=0
+set wrap
+set linebreak           "Break (visually) by word instead of character
 set visualbell          "Removes audiobell and sets visualbell
 set t_vb=               "Empty visualbell
 set nojoinspaces        "Prevents inserting two spaces after punctuation on a join
