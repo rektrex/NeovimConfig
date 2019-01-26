@@ -104,6 +104,21 @@ if executable('bash-language-server')
         \ })
 endif
 
+"Register omni to asyncomplete
+call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
+            \ 'name': 'omni',
+            \ 'whitelist': ['css'],
+            \ 'completor': function('asyncomplete#sources#omni#completor')
+            \ }))
+
+"Register asyncomplete-file
+au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
+            \ 'name': 'file',
+            \ 'whitelist': ['*'],
+            \ 'priority': 10,
+            \ 'completor': function('asycomplete#sources#file#completor')
+            \ }))
+
 "Chromatica
 let g:chromatica#enable_at_startup=1
 let g:chromatica#responsive_mode=1
@@ -135,3 +150,6 @@ let g:haskell_indent_after_bare_where = 2
 let g:haskell_indent_do = 3
 let g:haskell_indent_in = 1
 let g:haskell_indent_guard = 2
+
+"Challenger deep theme
+let g:challenger_deep_terminal_italics = 1
