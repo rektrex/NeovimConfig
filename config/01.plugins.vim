@@ -9,7 +9,7 @@ Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'itchyny/lightline.vim'
-Plug 'pangloss/vim-javascript'
+Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
 Plug 'prabirshrestha/vim-lsp'
@@ -19,5 +19,7 @@ Plug 'arakashic/chromatica.nvim'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
 Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
+Plug 'yami-beta/asyncomplete-omni.vim', { 'for': 'css' }
+Plug 'prabirshrestha/asyncomplete-file.vim'
 
 call plug#end()
