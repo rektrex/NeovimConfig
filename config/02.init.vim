@@ -37,6 +37,7 @@ set smarttab
 set smartindent
 filetype plugin indent on
 syntax on
+highlight String cterm=italic
 
 set undolevels=1000
 set backspace=indent,eol,start
@@ -88,3 +89,6 @@ cnoremap wsu w !env SUDO_ASKPASS=/bin/gnome-ssh-askpass sudo tee > /dev/null %
 
 "Don't continue comments in new line
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
+"CSS autocompletion
+autocmd FileType css set omnifunc=csscomplete#CompleteCSS
