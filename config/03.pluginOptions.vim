@@ -104,6 +104,17 @@ if executable('bash-language-server')
         \ })
 endif
 
+"ruby solargraph lsp
+if executable('solargraph')
+    " gem install solargraph
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'solargraph',
+        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'solargraph stdio']},
+        \ 'initialization_options': {"diagnostics": "true"},
+        \ 'whitelist': ['ruby'],
+        \ })
+endif
+
 "Register omni to asyncomplete
 call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
             \ 'name': 'omni',
