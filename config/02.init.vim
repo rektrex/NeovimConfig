@@ -18,6 +18,8 @@ set hlsearch            "Highlight search result
 set ignorecase          "Ignorecase while searching
 set smartcase           "Ignorecase while searching unless the query has capital letters
 set incsearch           "Incremental search
+set foldmethod=syntax
+set nofoldenable        "Disable folding
 
 "Use Ctrl+L to clear the highlighting of hlsearch
 if maparg('<C-L>', 'n') ==# ''
@@ -37,7 +39,6 @@ set smarttab
 set smartindent
 filetype plugin indent on
 syntax on
-highlight String cterm=italic
 
 set undolevels=1000
 set backspace=indent,eol,start
