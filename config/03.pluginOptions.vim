@@ -164,4 +164,3 @@ let g:haskell_indent_guard = 2
 
 "Challenger deep theme
 let g:challenger_deep_terminal_italics = 1
-highlight String gui=italic guifg=#ffe9aa
