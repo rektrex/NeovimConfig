@@ -23,7 +23,6 @@ Plug 'yami-beta/asyncomplete-omni.vim', { 'for': 'css' }
 Plug 'prabirshrestha/asyncomplete-file.vim'
 Plug 'LawrencePeng/vim-cute-cpp' , { 'for': 'cpp' }
 Plug 'ehamberg/vim-cute-python', { 'for': 'py' }
-Plug 'discoloda/c-conceal', { 'for': 'c' }
 Plug 'd-gold/vim-cute-javascript', { 'for': 'js' }
 Plug 'enomsg/vim-haskellConcealPlus', { 'for': 'hs' }
 Plug 'ticki/rust-cute-vim', { 'for': 'rs' }
