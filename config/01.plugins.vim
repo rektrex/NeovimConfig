@@ -21,11 +21,5 @@ Plug 'challenger-deep-theme/vim', { 'as': 'challenger-deep' }
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'yami-beta/asyncomplete-omni.vim', { 'for': 'css' }
 Plug 'prabirshrestha/asyncomplete-file.vim'
-Plug 'LawrencePeng/vim-cute-cpp' , { 'for': 'cpp' }
-Plug 'ehamberg/vim-cute-python', { 'for': 'py' }
-Plug 'd-gold/vim-cute-javascript', { 'for': 'js' }
-Plug 'enomsg/vim-haskellConcealPlus', { 'for': 'hs' }
-Plug 'ticki/rust-cute-vim', { 'for': 'rs' }
-Plug 'bigloser/vim-ruby-cute', { 'for': 'rb' }
 
 call plug#end()
