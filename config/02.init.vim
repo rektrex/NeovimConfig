@@ -27,7 +27,8 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 "Search and replace
-nmap <Leader>h :%s//g<Left><Left>
+nnoremap <Leader>h :%s//g<Left><Left>
+vnoremap <Leader>h :s//g<Left><Left>
 
 "Indentation rules and use spaces
 set autoindent
