@@ -164,3 +164,6 @@ let g:haskell_indent_guard = 2
 
 "Challenger deep theme
 let g:challenger_deep_terminal_italics = 1
+
+"Quickrun
+nnoremap <leader>e :QuickRunExecute<CR>

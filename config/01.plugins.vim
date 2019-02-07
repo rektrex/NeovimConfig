@@ -22,5 +22,8 @@ Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'yami-beta/asyncomplete-omni.vim', { 'for': 'css' }
 Plug 'prabirshrestha/asyncomplete-file.vim'
 Plug 'chrisbra/unicode.vim'
+Plug 'tpope/vim-repeat'
+Plug 'huytd/vim-quickrun'
+Plug 'tpope/vim-dispatch'
 
 call plug#end()
