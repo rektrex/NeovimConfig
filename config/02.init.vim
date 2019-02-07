@@ -20,6 +20,7 @@ set smartcase           "Ignorecase while searching unless the query has capital
 set incsearch           "Incremental search
 set foldmethod=syntax
 set nofoldenable        "Disable folding
+set laststatus=0        "Remove statusline
 
 "Use Ctrl+L to clear the highlighting of hlsearch
 if maparg('<C-L>', 'n') ==# ''
@@ -86,11 +87,5 @@ colorscheme challenger_deep
 "save session
 nnoremap <leader>s :mksession<CR>
 
-"save as sudo
-cnoremap wsu w !env SUDO_ASKPASS=/bin/gnome-ssh-askpass sudo tee > /dev/null %
-
 "Don't continue comments in new line
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
-
-"CSS autocompletion
-autocmd FileType css set omnifunc=csscomplete#CompleteCSS

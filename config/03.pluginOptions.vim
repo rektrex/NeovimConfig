@@ -1,13 +1,3 @@
-let g:lightline = {
-            \ 'colorscheme': 'wombat',
-            \ 'active': {
-                \ 'left': [ [ 'mode', 'paste' ],
-                \           [ 'readonly', 'filename', 'modified' ] ],
-                \ 'right': [ [ 'lineinfo' ],
-                \            [ 'filetype' ] ]
-                \}
-            \}
-
 "Python syntax highlighting
 let g:python_highlight_all = 1
 let g:python_highlight_space_errors = 0
@@ -103,24 +93,6 @@ if executable('bash-language-server')
         \ 'whitelist': ['sh'],
         \ })
 endif
-
-"ruby solargraph lsp
-if executable('solargraph')
-    " gem install solargraph
-    au User lsp_setup call lsp#register_server({
-        \ 'name': 'solargraph',
-        \ 'cmd': {server_info->[&shell, &shellcmdflag, 'solargraph stdio']},
-        \ 'initialization_options': {"diagnostics": "true"},
-        \ 'whitelist': ['ruby'],
-        \ })
-endif
-
-"Register omni to asyncomplete
-call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
-            \ 'name': 'omni',
-            \ 'whitelist': ['css'],
-            \ 'completor': function('asyncomplete#sources#omni#completor')
-            \ }))
 
 "Register asyncomplete-file
 au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({

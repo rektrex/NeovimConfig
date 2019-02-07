@@ -8,7 +8,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'itchyny/lightline.vim'
 Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/async.vim'
