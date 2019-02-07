@@ -94,6 +94,14 @@ if executable('bash-language-server')
         \ })
 endif
 
+"Register asymcomplete-omni
+call asyncomplete#register_source(asyncomplete#sources#omni#get_source_options({
+\ 'name': 'omni',
+\ 'whitelist': ['css'],
+\ 'blacklist': [],
+\ 'completor': function('asyncomplete#sources#omni#completor')
+\  }))
+
 "Register asyncomplete-file
 au User asyncomplete_setup call asyncomplete#register_source(asyncomplete#sources#file#get_source_options({
             \ 'name': 'file',

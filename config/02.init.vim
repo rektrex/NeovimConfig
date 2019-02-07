@@ -89,3 +89,6 @@ nnoremap <leader>s :mksession<CR>
 
 "Don't continue comments in new line
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
+"CSS autocomplete
+autocmd BufNewFile,BufRead css set omnifunc = csscomplete#CompleteCSS
