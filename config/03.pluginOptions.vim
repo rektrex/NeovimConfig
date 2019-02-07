@@ -139,3 +139,8 @@ let g:challenger_deep_terminal_italics = 1
 
 "Quickrun
 nnoremap <leader>e :QuickRunExecute<CR>
+
+"Conoline
+let g:conoline_use_colorscheme_default_normal=1
+let g:conoline_use_colorscheme_default_insert=1
+let g:conoline_auto_enable=1

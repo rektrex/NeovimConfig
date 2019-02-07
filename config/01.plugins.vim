@@ -24,5 +24,6 @@ Plug 'chrisbra/unicode.vim'
 Plug 'tpope/vim-repeat'
 Plug 'huytd/vim-quickrun'
 Plug 'tpope/vim-dispatch'
+Plug 'miyakogi/conoline.vim'
 
 call plug#end()
