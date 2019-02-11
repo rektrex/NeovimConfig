@@ -1,2 +1,2 @@
 "italicise Strings
-highlight String gui=italic guifg=#ffe9aa
+" highlight String gui=italic guifg=#ffe9aa
