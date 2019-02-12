@@ -1,4 +1,4 @@
-let mapleader="\<SPACE>"
+let mapleader="\<Space>"
 
 set showmatch           "Show matching brackets
 set number              "Show line numbers

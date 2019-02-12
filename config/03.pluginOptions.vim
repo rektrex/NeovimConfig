@@ -53,5 +53,13 @@ let g:conoline_use_colorscheme_default_normal=1
 let g:conoline_use_colorscheme_default_insert=1
 let g:conoline_auto_enable=1
 
-"Tigris
+"vim-closetag
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx'
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+let g:closetag_filetypes = 'html,xhtml,phtml,jsx'
+let g:closetag_xhtml_filetypes = 'xhtml,jsx'
+let g:closetag_emptyTags_caseSensitive = 1
+
+"tigris
 let g:tigris#enabled = 1
+let g:tigris#on_the_fly_enabled = 0

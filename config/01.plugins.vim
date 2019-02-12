@@ -8,7 +8,6 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'pangloss/vim-javascript', { 'for': 'javascript' }
 Plug 'tpope/vim-surround'
 Plug 'arakashic/chromatica.nvim'
 Plug 'numirias/semshi', { 'do': ':UpdateRemotePlugins' }
