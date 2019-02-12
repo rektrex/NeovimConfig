@@ -24,6 +24,7 @@ set laststatus=0        "Remove statusline
 set hidden              "if hidden not set, TextEdit might fail
 set cmdheight=1
 set noshowmode
+set noruler
 
 "copied from coc.nvim
 set updatetime=300
@@ -150,8 +151,6 @@ let g:onedark_terminal_italics = 1
 if (has("autocmd"))
     augroup colorextend
         autocmd!
-        "Make `Function`s bold in GUI mode
-        autocmd ColorScheme * call onedark#extend_highlight("Function", { "gui": "bold" })
         "Make strings italics in GUI mode"
         autocmd ColorScheme * call onedark#extend_highlight("String", { "gui": "italic" })
     augroup END
@@ -164,3 +163,24 @@ nnoremap <leader>s :mksession<CR>
 
 "Don't continue comments in new line
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
+
+hi cocStatusColor guibg=#be5046 guifg=#222222
+hi cwdColor guifg=#e5c07b
+hi fileNameColor guibg=#56b6c2 guifg=#222222
+
+au InsertEnter * hi fileNameColor guibg=#98c379
+au InsertLeave * hi fileNameColor guibg=#56b6c2
+
+"Tabline
+set tabline=
+set tabline+=%#cwdColor#
+set tabline+=%{getcwd()}
+set tabline+=%#LineNr#
+set tabline+=%=
+set tabline+=%#fileNameColor#
+set tabline+=\ %t
+set tabline+=%r
+set tabline+=%m\ 
+set tabline+=%#cocStatusColor#\ 
+set tabline+=%{coc#status()}
+set showtabline=2
