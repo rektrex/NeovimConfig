@@ -173,11 +173,14 @@ hi fileNameColor guibg=#56b6c2 guifg=#222222
 au InsertEnter * hi fileNameColor guibg=#98c379
 au InsertLeave * hi fileNameColor guibg=#56b6c2
 
+let currentDirectory = systemlist('dirs')[0]
+
 "Tabline
 set tabline=
 set tabline+=%#cwdColor#
 " set tabline+=%-0.60{getcwd()}\ 
-set tabline+=%-0.60{systemlist('dirs')[0]}\ 
+" set tabline+=%-0.60{systemlist('dirs')[0]}\ 
+set tabline+=%{currentDirectory}\ 
 set tabline+=%#LineNr#
 set tabline+=%=
 set tabline+=%#fileNameColor#
