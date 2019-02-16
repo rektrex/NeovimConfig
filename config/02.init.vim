@@ -53,7 +53,7 @@ function! s:show_documentation()
 endfunction
 
 " Highlight symbol under cursor on CursorHold
-autocmd CursorHold * silent call CocActionAsync('highlight')
+" autocmd CursorHold * silent call CocActionAsync('highlight')
 
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
@@ -164,17 +164,20 @@ nnoremap <leader>s :mksession<CR>
 "Don't continue comments in new line
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
+"Colours for Tabline
 hi cocStatusColor guibg=#be5046 guifg=#222222
-hi cwdColor guifg=#e5c07b
+hi cwdColor guibg=#e5c07b guifg=#222222
 hi fileNameColor guibg=#56b6c2 guifg=#222222
 
+"Change fileNameColor based based on insert/normal mode
 au InsertEnter * hi fileNameColor guibg=#98c379
 au InsertLeave * hi fileNameColor guibg=#56b6c2
 
 "Tabline
 set tabline=
 set tabline+=%#cwdColor#
-set tabline+=%{getcwd()}
+" set tabline+=%-0.60{getcwd()}\ 
+set tabline+=%-0.60{systemlist('dirs')[0]}\ 
 set tabline+=%#LineNr#
 set tabline+=%=
 set tabline+=%#fileNameColor#
