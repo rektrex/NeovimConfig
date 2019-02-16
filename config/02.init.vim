@@ -180,7 +180,7 @@ set tabline=
 set tabline+=%#cwdColor#
 " set tabline+=%-0.60{getcwd()}\ 
 " set tabline+=%-0.60{systemlist('dirs')[0]}\ 
-set tabline+=%{currentDirectory}\ 
+set tabline+=\ %{currentDirectory}\ 
 set tabline+=%#LineNr#
 set tabline+=%=
 set tabline+=%#fileNameColor#
