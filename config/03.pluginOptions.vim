@@ -63,3 +63,6 @@ let g:closetag_emptyTags_caseSensitive = 1
 "tigris
 let g:tigris#enabled = 1
 let g:tigris#on_the_fly_enabled = 0
+
+"vim-markdown
+let g:markdown_enable_conceal = 1

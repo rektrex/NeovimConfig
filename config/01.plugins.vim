@@ -20,6 +20,7 @@ Plug 'tpope/vim-dispatch'
 Plug 'miyakogi/conoline.vim'
 Plug 'joshdick/onedark.vim'
 Plug 'billyvg/tigris.nvim', { 'do': './install.sh' }
+Plug 'gabrielelana/vim-markdown'
 
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 
