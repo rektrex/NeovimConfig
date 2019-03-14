@@ -1,7 +1,6 @@
 let mapleader="\<Space>"
 
 set showmatch           "Show matching brackets
-set number              "Show line numbers
 set textwidth=0         "Prevent hard-wrap text
 set wrapmargin=0
 set wrap
@@ -15,9 +14,8 @@ set splitbelow          "Horizontal split below current
 set splitright          "Vertical split to the right of current
 
 set hlsearch            "Highlight search result
-set ignorecase          "Ignorecase while searching
-set smartcase           "Ignorecase while searching unless the query has capital letters
 set incsearch           "Incremental search
+set inccommand=nosplit
 set foldmethod=syntax
 set nofoldenable        "Disable folding
 set laststatus=0        "Remove statusline
@@ -146,17 +144,7 @@ if has('nvim') || has('termguicolors')
     set termguicolors
 endif
 
-let g:onedark_hide_endofbuffer = 1
-let g:onedark_terminal_italics = 1
-if (has("autocmd"))
-    augroup colorextend
-        autocmd!
-        "Make strings italics in GUI mode"
-        autocmd ColorScheme * call onedark#extend_highlight("String", { "gui": "italic" })
-    augroup END
-endif
-
-colorscheme onedark
+colorscheme custom
 
 "save session
 nnoremap <leader>s :mksession<CR>
@@ -165,28 +153,39 @@ nnoremap <leader>s :mksession<CR>
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 "Colours for Tabline
-hi cocStatusColor guibg=#be5046 guifg=#222222
-hi cwdColor guibg=#e5c07b guifg=#222222
-hi fileNameColor guibg=#56b6c2 guifg=#222222
+hi cocStatusColor guifg=#be5046
+hi fileNameColor guifg=#56b6c2
 
 "Change fileNameColor based based on insert/normal mode
-au InsertEnter * hi fileNameColor guibg=#98c379
-au InsertLeave * hi fileNameColor guibg=#56b6c2
+au InsertEnter * hi fileNameColor guifg=#98c379
+au InsertLeave * hi fileNameColor guifg=#56b6c2
 
 let currentDirectory = systemlist('dirs')[0]
 
 "Tabline
 set tabline=
-set tabline+=%#cwdColor#
-" set tabline+=%-0.60{getcwd()}\ 
-" set tabline+=%-0.60{systemlist('dirs')[0]}\ 
-set tabline+=\ %{currentDirectory}\ 
-set tabline+=%#LineNr#
-set tabline+=%=
 set tabline+=%#fileNameColor#
 set tabline+=\ %t
 set tabline+=%r
 set tabline+=%m\ 
 set tabline+=%#cocStatusColor#\ 
 set tabline+=%{coc#status()}
+set tabline+=%#LineNr#
+set tabline+=%=
+set tabline+=%#Comment#
+set tabline+=%{currentDirectory}\ 
 set showtabline=2
+
+set rnu
+augroup numbertoggle
+    autocmd!
+    autocmd BufEnter,FocusGained * set rnu nonu
+    autocmd BufLeave,FocusLost * set nu nornu
+augroup END
+
+"persistent undo
+set undodir=~/.local/share/nvim/undodir
+set undofile
+
+"set .pl to prolog
+au BufRead,BufNewFile *.pl set filetype=Prolog
