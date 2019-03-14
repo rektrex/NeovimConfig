@@ -12,5 +12,7 @@
       "filetypes": ["sh"],
       "ignoredRootPaths": ["~"]
     }
-   }
+   },
+
+   "rust-client.channel": "stable"
 }
