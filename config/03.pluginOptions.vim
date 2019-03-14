@@ -13,13 +13,6 @@ let g:cpp_concepts_highlight = 1
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
 
-"Chromatica
-let g:chromatica#enable_at_startup=1
-let g:chromatica#responsive_mode=1
-
-"Semshi
-let g:semshi#error_sign=v:false
-
 "Vim commentary
 autocmd FileType xdefaults setlocal commentstring=!\ %s
 
@@ -60,9 +53,9 @@ let g:closetag_filetypes = 'html,xhtml,phtml,jsx'
 let g:closetag_xhtml_filetypes = 'xhtml,jsx'
 let g:closetag_emptyTags_caseSensitive = 1
 
-"tigris
-let g:tigris#enabled = 1
-let g:tigris#on_the_fly_enabled = 0
-
 "vim-markdown
 let g:markdown_enable_conceal = 1
+
+"easy align
+nmap ga <Plug>(EasyAlign)
+xmap ga <Plug>(EasyAlign)
