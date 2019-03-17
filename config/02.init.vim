@@ -153,12 +153,12 @@ nnoremap <leader>s :mksession<CR>
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 "Colours for Tabline
-hi cocStatusColor guifg=#be5046
-hi fileNameColor guifg=#56b6c2
+hi cocStatusColor guibg=#be5046 guifg=#191919
+hi fileNameColor guibg=#56b6c2 guifg=#191919
 
 "Change fileNameColor based based on insert/normal mode
-au InsertEnter * hi fileNameColor guifg=#98c379
-au InsertLeave * hi fileNameColor guifg=#56b6c2
+au InsertEnter * hi fileNameColor guibg=#98c379
+au InsertLeave * hi fileNameColor guibg=#56b6c2
 
 let currentDirectory = systemlist('dirs')[0]
 
@@ -176,11 +176,12 @@ set tabline+=%#Comment#
 set tabline+=%{currentDirectory}\ 
 set showtabline=2
 
+set nu
 set rnu
 augroup numbertoggle
     autocmd!
-    autocmd BufEnter,FocusGained * set rnu nonu
-    autocmd BufLeave,FocusLost * set nu nornu
+    autocmd BufEnter,FocusGained * set rnu
+    autocmd BufLeave,FocusLost * set nornu
 augroup END
 
 "persistent undo
