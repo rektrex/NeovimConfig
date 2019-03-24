@@ -16,6 +16,8 @@ Plug 'huytd/vim-quickrun'
 Plug 'tpope/vim-dispatch'
 Plug 'miyakogi/conoline.vim'
 Plug 'gabrielelana/vim-markdown'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
 
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 

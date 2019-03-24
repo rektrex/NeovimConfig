@@ -59,3 +59,6 @@ let g:markdown_enable_conceal = 1
 "easy align
 nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
+
+"vim-jsx
+let g:jsx_ext_required = 1
