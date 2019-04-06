@@ -90,8 +90,8 @@ hi clear Boolean
 hi clear String
 hi clear Delimiter
 
-hi Function  guifg=#cc99a2 gui=bold
-hi Constant  guifg=#cc99a2 gui=italic
+hi Function  guifg=#f492b1 gui=bold
+hi Constant  guifg=#f492b1 gui=italic
 hi Type gui=bold
 
 " Links ------------------------------------------------------------------------
