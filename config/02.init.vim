@@ -144,7 +144,7 @@ if has('nvim') || has('termguicolors')
     set termguicolors
 endif
 
-colorscheme custom
+colorscheme custom_black
 
 "save session
 nnoremap <leader>s :mksession<CR>
