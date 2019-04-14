@@ -2,21 +2,18 @@
 call plug#begin()
 
 Plug 'junegunn/vim-easy-align'
-Plug 'alvan/vim-closetag'
-Plug 'mattn/emmet-vim'
+Plug 'alvan/vim-closetag', { 'for': ['html', 'xml', 'javascript.jsx'] }
+Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript.jsx'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-surround'
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
-Plug 'chrisbra/unicode.vim'
 Plug 'tpope/vim-repeat'
-Plug 'huytd/vim-quickrun'
-Plug 'tpope/vim-dispatch'
 Plug 'miyakogi/conoline.vim'
-Plug 'gabrielelana/vim-markdown'
-Plug 'pangloss/vim-javascript'
-Plug 'mxw/vim-jsx'
+Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
+Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
+Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 
 Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
 
