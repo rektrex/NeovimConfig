@@ -17,8 +17,8 @@ hi Cursor           ctermbg=7    ctermfg=NONE cterm=NONE           guibg=#b6b6b0
 
 hi Normal           ctermbg=0    ctermfg=7    cterm=NONE           guibg=#282c34  guifg=#b6b6b0  gui=NONE
 hi Title            ctermbg=NONE ctermfg=7    cterm=BOLDUNDERLINE  guibg=NONE     guifg=#b6b6b0  gui=BOLDUNDERLINE
-hi Comment          ctermbg=NONE ctermfg=8    cterm=NONE           guibg=NONE     guifg=#888884 gui=NONE
-hi SpecialComment   ctermbg=NONE ctermfg=12   cterm=NONE           guibg=NONE     guifg=#888884 gui=NONE
+hi Comment          ctermbg=NONE ctermfg=8    cterm=NONE           guibg=NONE     guifg=#888884  gui=NONE
+hi SpecialComment   ctermbg=NONE ctermfg=12   cterm=NONE           guibg=NONE     guifg=#888884  gui=NONE
 hi Todo             ctermbg=NONE ctermfg=4    cterm=UNDERLINE      guibg=NONE     guifg=#65baf5  gui=UNDERLINE
 hi Directory        ctermbg=NONE ctermfg=6    cterm=NONE           guibg=NONE     guifg=#69c5b4  gui=NONE
 
