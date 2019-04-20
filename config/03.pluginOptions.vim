@@ -1,14 +1,3 @@
-"Python syntax highlighting
-let g:python_highlight_all = 1
-let g:python_highlight_space_errors = 0
-
-"C++ syntax highlighting
-let g:cpp_class_scope_highlight = 1
-let g:cpp_member_variable_highlight = 1
-let g:cpp_class_decl_highlight = 1
-let g:cpp_experimental_simple_template_highlight = 1
-let g:cpp_concepts_highlight = 1
-
 "Emmet
 let g:user_emmet_install_global = 0
 autocmd FileType html,css EmmetInstall
@@ -37,9 +26,6 @@ let g:haskell_indent_after_bare_where = 2
 let g:haskell_indent_do = 3
 let g:haskell_indent_in = 1
 let g:haskell_indent_guard = 2
-
-"Quickrun
-nnoremap <leader>e :QuickRunExecute<CR>
 
 "Conoline
 let g:conoline_use_colorscheme_default_normal=1

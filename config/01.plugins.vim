@@ -7,7 +7,6 @@ Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript.jsx'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
-Plug 'tpope/vim-surround'
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'tpope/vim-repeat'
 Plug 'miyakogi/conoline.vim'
