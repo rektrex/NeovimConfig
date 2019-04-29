@@ -14,5 +14,7 @@
     }
    },
 
-   "rust-client.channel": "stable"
+   "rust-client.channel": "stable",
+
+   "suggest.noselect": false
 }
