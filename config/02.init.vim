@@ -89,8 +89,8 @@ if maparg('<C-L>', 'n') ==# ''
 endif
 
 "Search and replace
-nnoremap <Leader>h :%s//g<Left><Left>
-vnoremap <Leader>h :s//g<Left><Left>
+nnoremap <leader>h :%s//g<Left><Left>
+vnoremap <leader>h :s//g<Left><Left>
 
 "Indentation rules and use spaces
 set autoindent
@@ -191,3 +191,6 @@ set undofile
 
 "set .pl to prolog
 au BufRead,BufNewFile *.pl set filetype=Prolog
+
+nnoremap <leader>w :w<CR>
+nnoremap <leader>x :x<CR>
