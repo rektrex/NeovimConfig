@@ -177,12 +177,11 @@ set tabline+=%=
 set tabline+=%{currentDirectory}\ 
 set showtabline=2
 
-set nu
 set rnu
 augroup numbertoggle
     autocmd!
-    autocmd BufEnter,FocusGained * set rnu
-    autocmd BufLeave,FocusLost * set nornu
+    autocmd BufEnter,FocusGained * set rnu nonu
+    autocmd BufLeave,FocusLost * set nornu nu
 augroup END
 
 "persistent undo
