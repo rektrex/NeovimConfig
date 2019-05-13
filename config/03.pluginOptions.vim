@@ -23,11 +23,6 @@ let g:haskell_indent_do = 3
 let g:haskell_indent_in = 1
 let g:haskell_indent_guard = 2
 
-"Conoline
-let g:conoline_use_colorscheme_default_normal=1
-let g:conoline_use_colorscheme_default_insert=1
-let g:conoline_auto_enable=1
-
 "vim-closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.jsx'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'

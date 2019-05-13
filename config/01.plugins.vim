@@ -8,7 +8,6 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 Plug 'tpope/vim-repeat'
-Plug 'miyakogi/conoline.vim'
 Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
