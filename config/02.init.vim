@@ -153,31 +153,6 @@ nnoremap <leader>s :mksession<CR>
 "Don't continue comments in new line
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
-"Colours for Tabline
-hi cocStatusColor guibg=#eee8d5 guifg=BROWN
-" hi fileNameColor guibg=#006d9a guifg=#191919
-hi backgroundColor guibg=#eee8d5 guifg=#93a1a1
-
-"Change fileNameColor based based on insert/normal mode
-" au InsertEnter * hi fileNameColor guibg=#98c379
-" au InsertLeave * hi fileNameColor guibg=#009ddc
-
-let currentDirectory = systemlist('dirs')[0]
-
-"Tabline
-set tabline=
-set tabline+=%#backgroundColor#
-" set tabline+=%#fileNameColor#
-set tabline+=\ %t
-set tabline+=%r
-set tabline+=%m\ 
-set tabline+=%#cocStatusColor#\ 
-set tabline+=%{coc#status()}
-set tabline+=%#backgroundColor#
-set tabline+=%=
-set tabline+=%{currentDirectory}\ 
-set showtabline=2
-
 set rnu
 augroup numbertoggle
     autocmd!

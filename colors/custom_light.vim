@@ -95,3 +95,21 @@ hi CocErrorSign   guibg=#eee8d5 guifg=#ff0000
 hi CocWarningSign guibg=#eee8d5 guifg=#ff922b
 hi CocInfoSign    guibg=#eee8d5 guifg=#fab005
 hi CocHintSign    guibg=#eee8d5 guifg=#15aabf
+
+" Tabline ---------------------------------------------------------------------
+let currentDirectory = systemlist('dirs')[0]
+
+hi cocStatusColor guibg=#eee8d5 guifg=BROWN
+hi backgroundColor guibg=#eee8d5 guifg=#93a1a1
+
+set tabline=
+set tabline+=%#backgroundColor#
+set tabline+=\ %t
+set tabline+=%r
+set tabline+=%m\ 
+set tabline+=%#cocStatusColor#\ 
+set tabline+=%{coc#status()}
+set tabline+=%#backgroundColor#
+set tabline+=%=
+set tabline+=%{currentDirectory}\ 
+set showtabline=2
