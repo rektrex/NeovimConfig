@@ -29,7 +29,7 @@ hi IncSearch      guibg=#dfc56d guifg=NONE    gui=BOLD
 hi Search         guibg=#dfc56d guifg=NONE    gui=BOLD
 hi CursorColumn   guibg=#eee8d5 guifg=NONE    gui=NONE
 hi CursorLine     guibg=#eee8d5 guifg=NONE    gui=NONE
-hi VertSplit      guibg=NONE    guifg=#657b83 gui=NONE
+hi VertSplit      guibg=NONE    guifg=#657b83 gui=BOLD
 hi WildMenu       guibg=#eee8d5 guifg=#073642 gui=BOLDUNDERLINE
 hi DiffAdd        guibg=#88c563 guifg=#fdf6e3 gui=NONE
 hi DiffDelete     guibg=#e76d6d guifg=#fdf6e3 gui=NONE
