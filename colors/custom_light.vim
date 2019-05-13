@@ -43,7 +43,7 @@ hi SpellBad       guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 hi SpellCap       guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 hi SpellLocal     guibg=NONE    guifg=#edbabf gui=UNDERCURL
 hi SpellRare      guibg=NONE    guifg=#edbabf gui=UNDERCURL
-hi ErrorMsg       guibg=#NONE   guifg=#dc322f gui=NONE
+hi ErrorMsg       guibg=NONE   guifg=#dc322f  gui=NONE
 hi WarningMsg     guibg=NONE    guifg=#e76d6d gui=NONE
 hi MoreMsg        guibg=NONE    guifg=#268bd2 gui=NONE
 hi Question       guibg=NONE    guifg=#268bd2 gui=NONE
