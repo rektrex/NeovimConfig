@@ -23,6 +23,7 @@ set hidden              "if hidden not set, TextEdit might fail
 set cmdheight=1
 set noshowmode
 set noruler
+set cursorline
 
 "copied from coc.nvim
 set updatetime=300
