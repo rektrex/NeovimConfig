@@ -51,6 +51,7 @@ hi Error          guibg=NONE    guifg=#e76d6d gui=REVERSE
 hi Ignore         guibg=NONE    guifg=NONE    gui=NONE
 hi EndOfBuffer    guibg=NONE    guifg=#fdf6e3 gui=NONE
 hi NonText        guibg=NONE    guifg=#cf669f gui=NONE
+hi SpecialKey     guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 
 " Clear & override ------------------------------------------------------------
 
