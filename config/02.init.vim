@@ -154,9 +154,9 @@ nnoremap <leader>s :mksession<CR>
 autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 "Colours for Tabline
-hi cocStatusColor guibg=#000000 guifg=#be4d53 gui=bold
+hi cocStatusColor guibg=#eee8d5 guifg=BROWN
 " hi fileNameColor guibg=#006d9a guifg=#191919
-hi backgroundColor guibg=#000000 guifg=#cccccc
+hi backgroundColor guibg=#eee8d5 guifg=#93a1a1
 
 "Change fileNameColor based based on insert/normal mode
 " au InsertEnter * hi fileNameColor guibg=#98c379
