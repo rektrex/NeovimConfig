@@ -1,7 +1,3 @@
-"Emmet
-let g:user_emmet_install_global = 0
-autocmd FileType html,css EmmetInstall
-
 "Vim commentary
 autocmd FileType xdefaults setlocal commentstring=!\ %s
 
@@ -47,4 +43,4 @@ nmap ga <Plug>(EasyAlign)
 xmap ga <Plug>(EasyAlign)
 
 "vim-jsx
-let g:jsx_ext_required = 1
+let g:jsx_ext_required = 0

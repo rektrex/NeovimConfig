@@ -16,5 +16,7 @@
 
    "rust-client.channel": "stable",
 
-   "suggest.noselect": false
+   "suggest.noselect": false,
+
+   "emmet.includeLanguages": {"javascript": "javascriptreact"}
 }

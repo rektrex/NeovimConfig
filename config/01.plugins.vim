@@ -3,7 +3,6 @@ call plug#begin()
 
 Plug 'junegunn/vim-easy-align'
 Plug 'alvan/vim-closetag', { 'for': ['html', 'xml', 'javascript.jsx'] }
-Plug 'mattn/emmet-vim', { 'for': ['html', 'css', 'javascript.jsx'] }
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
