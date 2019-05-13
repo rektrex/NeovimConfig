@@ -43,13 +43,14 @@ hi SpellBad       guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 hi SpellCap       guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 hi SpellLocal     guibg=NONE    guifg=#edbabf gui=UNDERCURL
 hi SpellRare      guibg=NONE    guifg=#edbabf gui=UNDERCURL
-hi ErrorMsg       guibg=NONE   guifg=#dc322f  gui=NONE
+hi ErrorMsg       guibg=NONE    guifg=#dc322f gui=NONE
 hi WarningMsg     guibg=NONE    guifg=#e76d6d gui=NONE
 hi MoreMsg        guibg=NONE    guifg=#268bd2 gui=NONE
 hi Question       guibg=NONE    guifg=#268bd2 gui=NONE
 hi Error          guibg=NONE    guifg=#e76d6d gui=REVERSE
 hi Ignore         guibg=NONE    guifg=NONE    gui=NONE
 hi EndOfBuffer    guibg=NONE    guifg=#fdf6e3 gui=NONE
+hi NonText        guibg=NONE    guifg=#cf669f gui=NONE
 
 " Clear & override ------------------------------------------------------------
 
@@ -87,3 +88,9 @@ if has('nvim')
     let g:terminal_color_14 = '#586e75'
     let g:terminal_color_15 = '#002b36'
 endif
+
+" coc.nvim --------------------------------------------------------------------
+hi CocErrorSign   guibg=#eee8d5 guifg=#ff0000
+hi CocWarningSign guibg=#eee8d5 guifg=#ff922b
+hi CocInfoSign    guibg=#eee8d5 guifg=#fab005
+hi CocHintSign    guibg=#eee8d5 guifg=#15aabf
