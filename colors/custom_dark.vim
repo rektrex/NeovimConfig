@@ -45,8 +45,8 @@ hi SpellLocal     guibg=NONE    guifg=#edbabf gui=UNDERCURL
 hi SpellRare      guibg=NONE    guifg=#edbabf gui=UNDERCURL
 hi ErrorMsg       guibg=NONE    guifg=#dc322f gui=NONE
 hi WarningMsg     guibg=NONE    guifg=#e76d6d gui=NONE
-hi MoreMsg        guibg=NONE    guifg=#268bd2 gui=NONE
-hi Question       guibg=NONE    guifg=#268bd2 gui=NONE
+hi MoreMsg        guibg=NONE    guifg=#d78787 gui=NONE
+hi Question       guibg=NONE    guifg=#d78787 gui=NONE
 hi Error          guibg=NONE    guifg=#e76d6d gui=REVERSE
 hi Ignore         guibg=NONE    guifg=NONE    gui=NONE
 hi EndOfBuffer    guibg=NONE    guifg=#3a3a3a gui=NONE
@@ -76,7 +76,7 @@ if has('nvim')
     let g:terminal_color_1  = '#dc322f'
     let g:terminal_color_2  = '#859900'
     let g:terminal_color_3  = '#b58900'
-    let g:terminal_color_4  = '#268bd2'
+    let g:terminal_color_4  = '#d78787'
     let g:terminal_color_5  = '#d33682'
     let g:terminal_color_6  = '#2aa198'
     let g:terminal_color_7  = '#073642'
