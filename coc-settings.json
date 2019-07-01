@@ -18,5 +18,7 @@
 
    "suggest.noselect": false,
 
-   "emmet.includeLanguages": {"javascript": "javascriptreact"}
+   "emmet.includeLanguages": {"javascript": "javascriptreact"},
+
+   "python.jediPath": "false"
 }

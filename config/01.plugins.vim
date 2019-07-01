@@ -12,6 +12,5 @@ Plug 'gabrielelana/vim-markdown', { 'for': 'markdown' }
 Plug 'pangloss/vim-javascript', { 'for': ['javascript', 'javascript.jsx'] }
 Plug 'mxw/vim-jsx', { 'for': ['javascript', 'javascript.jsx'] }
 
-Plug 'neoclide/coc.nvim', { 'tag': '*', 'do': { -> coc#util#install() } }
-
+Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 call plug#end()
