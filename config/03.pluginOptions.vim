@@ -32,10 +32,3 @@ let g:closetag_emptyTags_caseSensitive = 1
 
 "vim-markdown
 let g:markdown_enable_conceal = 1
-
-"easy align
-nmap ga <Plug>(EasyAlign)
-xmap ga <Plug>(EasyAlign)
-
-"vim-jsx
-let g:jsx_ext_required = 0
