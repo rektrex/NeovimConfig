@@ -3,7 +3,6 @@ call plug#begin()
 
 Plug 'alvan/vim-closetag', { 'for': ['html', 'xml', 'javascript.jsx'] }
 Plug 'jiangmiao/auto-pairs'
-Plug 'tpope/vim-surround'
 Plug 'tpope/vim-commentary'
 Plug 'neovimhaskell/haskell-vim', { 'for': 'haskell' }
 
