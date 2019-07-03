@@ -67,6 +67,8 @@ augroup mygroup
   autocmd FileType typescript,json setl formatexpr=CocAction('formatSelected')
   " Update signature help on jump placeholder
   autocmd User CocJumpPlaceholder call CocActionAsync('showSignatureHelp')
+  " Don't continue comments in new line
+  autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 augroup end
 
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
@@ -150,8 +152,6 @@ colorscheme custom_dark
 "save session
 nnoremap <leader>s :mksession<CR>
 
-"Don't continue comments in new line
-autocmd BufNewFile,BufRead * setlocal formatoptions-=cro
 
 set rnu
 augroup numbertoggle
@@ -163,9 +163,6 @@ augroup END
 "persistent undo
 set undodir=~/.local/share/nvim/undodir
 set undofile
-
-"set .pl to prolog
-au BufRead,BufNewFile *.pl set filetype=Prolog
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>x :x<CR>
