@@ -91,6 +91,12 @@ if maparg('<C-L>', 'n') ==# ''
     nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 endif
 
+"coc-smartf, press <esc> to cancel
+nmap f <Plug>(coc-smartf-forward)
+nmap F <Plug>(coc-smartf-backward)
+nmap ; <Plug>(coc-smartf-repeat)
+nmap , <Plug>(coc-smartf-repeat-opposite)
+
 "Search and replace
 nnoremap <leader>h :%s//g<Left><Left>
 vnoremap <leader>h :s//g<Left><Left>
