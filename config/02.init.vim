@@ -15,6 +15,8 @@ set splitright          "Vertical split to the right of current
 
 set hlsearch            "Highlight search result
 set incsearch           "Incremental search
+set ignorecase
+set smartcase
 set inccommand=nosplit
 set foldmethod=syntax
 set nofoldenable        "Disable folding
