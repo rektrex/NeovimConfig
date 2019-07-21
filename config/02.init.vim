@@ -154,14 +154,6 @@ colorscheme custom_dark
 "save session
 nnoremap <leader>s :mksession<CR>
 
-
-set rnu
-augroup numbertoggle
-    autocmd!
-    autocmd BufEnter,FocusGained * set rnu nonu
-    autocmd BufLeave,FocusLost * set nornu nu
-augroup END
-
 "persistent undo
 set undodir=~/.local/share/nvim/undodir
 set undofile
