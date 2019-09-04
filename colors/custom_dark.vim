@@ -117,3 +117,6 @@ set showtabline=2
 
 " Rust ------------------------------------------------------------------------
 hi rustCommentLineDoc guibg=#808080 guifg=#005f5f gui=ITALIC
+
+" Help ------------------------------------------------------------------------
+hi helpHyperTextJump gui=UNDERLINE
