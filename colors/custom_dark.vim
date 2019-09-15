@@ -11,7 +11,7 @@ set background=dark
 " colors ----------------------------------------------------------------------
 
 hi Cursor         guibg=#c8c8c8 guifg=NONE    gui=NONE
-hi Normal         guibg=#1e1e1e guifg=#fefefe gui=NONE
+hi Normal         guibg=#0d0d0d guifg=#fefefe gui=NONE
 hi Title          guibg=NONE    guifg=#fefefe gui=BOLDUNDERLINE
 hi Comment        guibg=NONE    guifg=#808080 gui=ITALIC
 hi SpecialComment guibg=NONE    guifg=BROWN   gui=ITALIC
@@ -31,10 +31,10 @@ hi CursorColumn   guibg=NONE    guifg=NONE    gui=NONE
 hi CursorLine     guibg=#474747 guifg=NONE    gui=NONE
 hi VertSplit      guibg=NONE    guifg=#fefefe gui=BOLD
 hi WildMenu       guibg=NONE    guifg=#fefefe gui=BOLDUNDERLINE
-hi DiffAdd        guibg=#88c563 guifg=#1e1e1e gui=NONE
-hi DiffDelete     guibg=#e76d6d guifg=#1e1e1e gui=NONE
-hi DiffChange     guibg=#1e1e1e guifg=#ecb534 gui=UNDERLINE
-hi DiffText       guibg=#ecb534 guifg=#1e1e1e gui=NONE
+hi DiffAdd        guibg=#88c563 guifg=#0d0d0d gui=NONE
+hi DiffDelete     guibg=#e76d6d guifg=#0d0d0d gui=NONE
+hi DiffChange     guibg=#0d0d0d guifg=#ecb534 gui=UNDERLINE
+hi DiffText       guibg=#ecb534 guifg=#0d0d0d gui=NONE
 hi Pmenu          guibg=#474747 guifg=#fefefe gui=NONE
 hi PmenuSel       guibg=#474747 guifg=#b6d6fd gui=BOLD
 hi PmenuSbar      guibg=#fefefe guifg=#073642 gui=NONE
@@ -49,7 +49,7 @@ hi MoreMsg        guibg=NONE    guifg=#b6d6fd gui=NONE
 hi Question       guibg=NONE    guifg=#b6d6fd gui=NONE
 hi Error          guibg=NONE    guifg=#e76d6d gui=REVERSE
 hi Ignore         guibg=NONE    guifg=NONE    gui=NONE
-hi EndOfBuffer    guibg=NONE    guifg=#1e1e1e gui=NONE
+hi EndOfBuffer    guibg=NONE    guifg=#0d0d0d gui=NONE
 hi NonText        guibg=NONE    guifg=#b6d6fd gui=NONE
 hi SpecialKey     guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 
@@ -80,7 +80,7 @@ if has('nvim')
     let g:terminal_color_5  = '#d33682'
     let g:terminal_color_6  = '#2aa198'
     let g:terminal_color_7  = '#073642'
-    let g:terminal_color_8  = '#1e1e1e'
+    let g:terminal_color_8  = '#0d0d0d'
     let g:terminal_color_9  = '#cb4b16'
     let g:terminal_color_10 = '#808080'
     let g:terminal_color_11 = '#839496'
