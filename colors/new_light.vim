@@ -36,9 +36,9 @@ hi DiffDelete     guibg=#e76d6d guifg=#fafafa gui=NONE
 hi DiffChange     guibg=#fafafa guifg=#ecb534 gui=UNDERLINE
 hi DiffText       guibg=#ecb534 guifg=#fafafa gui=NONE
 hi Pmenu          guibg=#efefef guifg=#657b83 gui=NONE
-hi PmenuSel       guibg=#efefef guifg=#ff5b77 gui=BOLD
+hi PmenuSel       guibg=#efefef guifg=#008ec4 gui=BOLD
 hi PmenuSbar      guibg=#657b83 guifg=#073642 gui=NONE
-hi PmenuThumb     guibg=#ff5b77 guifg=#657b83 gui=NONE
+hi PmenuThumb     guibg=#008ec4 guifg=#657b83 gui=NONE
 hi SpellBad       guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 hi SpellCap       guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 hi SpellLocal     guibg=NONE    guifg=#edbabf gui=UNDERCURL
@@ -63,16 +63,15 @@ hi clear PreProc
 hi clear Special
 hi clear Identifier
 
-hi Constant guifg=#ff5b77
+hi Constant guifg=#008ec4
 hi Tag gui=UNDERLINE
 hi Function gui=BOLD
-hi Statement guifg=#15aabf
 
 " coc.nvim --------------------------------------------------------------------
 hi CocErrorSign   guibg=NONE guifg=#ff0000
 hi CocWarningSign guibg=NONE guifg=#ff922b
 hi CocInfoSign    guibg=NONE guifg=#fab005
-hi CocHintSign    guibg=NONE guifg=#15aabf
+hi CocHintSign    guibg=NONE guifg=#008ec4
 
 " Tabline ---------------------------------------------------------------------
 let currentDirectory = systemlist('dirs')[0]
