@@ -65,7 +65,6 @@ hi clear Identifier
 
 hi Constant guifg=#008ec4
 hi Tag gui=UNDERLINE
-hi Function gui=BOLD
 
 " coc.nvim --------------------------------------------------------------------
 hi CocErrorSign   guibg=NONE guifg=#ff0000
