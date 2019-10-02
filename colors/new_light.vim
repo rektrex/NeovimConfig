@@ -73,22 +73,29 @@ hi CocInfoSign    guibg=NONE guifg=#fab005
 hi CocHintSign    guibg=NONE guifg=#008ec4
 
 " Tabline ---------------------------------------------------------------------
-let currentDirectory = systemlist('dirs')[0]
+" let currentDirectory = systemlist('dirs')[0]
 
-hi cocStatusColor guibg=NONE guifg=#dc322f
+" hi cocStatusColor guibg=NONE guifg=#dc322f
 hi backgroundColor guibg=NONE guifg=#93a1a1
 
-set tabline=
-set tabline+=%#backgroundColor#
-set tabline+=\ %t
-set tabline+=%r
-set tabline+=%m\ 
-set tabline+=%#cocStatusColor#\ 
-set tabline+=%{coc#status()}
-set tabline+=%#backgroundColor#
-set tabline+=%=
-set tabline+=%{currentDirectory}\ 
-set showtabline=2
+" set tabline=
+" set tabline+=%#backgroundColor#
+" set tabline+=\ %t
+" set tabline+=%r
+" set tabline+=%m\ 
+" set tabline+=%#cocStatusColor#\ 
+" set tabline+=%{coc#status()}
+" set tabline+=%#backgroundColor#
+" set tabline+=%=
+" set tabline+=%{currentDirectory}\ 
+" set showtabline=2
+
+set statusline=
+set statusline+=%#backgroundColor#
+set statusline+=%=
+set statusline+=%{coc#status()}\ 
+set statusline+=\ %t
+set laststatus=2
 
 " Help ------------------------------------------------------------------------
 hi helpHyperTextJump gui=UNDERLINE
