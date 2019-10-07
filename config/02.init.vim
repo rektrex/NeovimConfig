@@ -160,3 +160,5 @@ set undofile
 
 nnoremap <leader>w :w<CR>
 nnoremap <leader>x :x<CR>
+
+set path+=**
