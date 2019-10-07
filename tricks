@@ -5,3 +5,5 @@ increment a visual block: <count>g<c-a>
     1       4
 
 :r!seq N generate numbers from 1 to N separated by newline
+
+use :b <search_term> to switch to file including <search_term> in it's name
