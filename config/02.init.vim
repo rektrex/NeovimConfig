@@ -151,6 +151,8 @@ endif
 
 colorscheme new_dark
 
+set guicursor=
+
 "save session
 nnoremap <leader>s :mksession<CR>
 
