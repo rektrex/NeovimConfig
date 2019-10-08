@@ -45,5 +45,9 @@
       "<C-t>": "action:tabe",
       "<C-v>": "action:vsplit",
       "<C-s>": "action:split"
-    }
+    },
+
+    "git.enableGutters": false,
+    "git.realtimeGutters": false,
+    "coc.source.issues.enable": false
 }
