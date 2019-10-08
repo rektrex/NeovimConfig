@@ -74,14 +74,38 @@ hi CocHintSign    guibg=NONE guifg=#d75f87
 
 " Statusline ------------------------------------------------------------------
 
-hi backgroundColor guibg=NONE guifg=#6f6f6f
+hi backgroundColor guibg=NONE guifg=#6f6f6f gui=UNDERLINE
 
 set statusline=
 set statusline+=%#backgroundColor#
+set statusline+=\ %{StatuslineMode()}
 set statusline+=%=
 set statusline+=%{coc#status()}\ 
 set statusline+=\ %t
+set statusline+=%m
+set statusline+=%r
 set laststatus=2
+
+function! StatuslineMode()
+    let l:mode=mode()
+    if l:mode==#"n"
+        return "NORMAL"
+    elseif l:mode==?"v"
+        return "VISUAL"
+    elseif l:mode==#"i"
+        return "INSERT"
+    elseif l:mode==#"R"
+        return "REPLACE"
+    elseif l:mode==?"s"
+        return "SELECT"
+    elseif l:mode==#"t"
+        return "TERMINAL"
+    elseif l:mode==#"c"
+        return "COMMAND"
+    elseif l:mode==#"!"
+        return "SHELL"
+    endif
+endfunction
 
 " Help ------------------------------------------------------------------------
 hi helpHyperTextJump gui=UNDERLINE
