@@ -162,3 +162,12 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>x :x<CR>
 
 set path+=**
+
+"Open yank list using coc-lists and coc-yank
+nnoremap <silent> <leader>y :<C-u>CocList --number-select -A yank<CR>
+
+"Search for files from current cwd
+nnoremap <silent> <leader>b : <C-u>CocList --number-select -A files<CR>
+
+"Grep text from current cwd
+nnoremap <silent> <leader>g : <C-u>CocList --number-select -I grep<CR>
