@@ -90,5 +90,16 @@
     "list.source.yank.defaultOptions": ["--number-select"],
     "list.source.branches.defaultOptions": ["--number-select"],
     "list.source.bcommits.defaultOptions": ["--number-select"],
-    "list.source.gfiles.defaultOptions": ["--number-select"]
+    "list.source.gfiles.defaultOptions": ["--number-select"],
+
+    "solargraph.diagnostics": true,
+    "solargraph.completion": true,
+    "solargraph.hover": true,
+    "solargraph.autoformat": true,
+    "solargraph.formatting": true,
+    "solargraph.symbols": true,
+    "solargraph.definitions": true,
+    "solargraph.rename": true,
+    "solargraph.references": true,
+    "solargraph.folding": false
 }
