@@ -112,3 +112,6 @@ hi helpHyperTextJump gui=UNDERLINE
 
 " Typescript ------------------------------------------------------------------
 hi link typescriptParens Delimiter
+
+" Vimscript -------------------------------------------------------------------
+hi link vimUserFunc Function
