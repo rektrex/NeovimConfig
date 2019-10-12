@@ -1,13 +1,18 @@
+"leader key
 let mapleader="\<Space>"
 
-set showmatch           "Show matching brackets
+"UI ------------------
+
 set textwidth=0         "Prevent hard-wrap text
 set wrapmargin=0
 set wrap
 set linebreak           "Break (visually) by word instead of character
+
 set visualbell          "Removes audiobell and sets visualbell
 set t_vb=               "Empty visualbell
+
 set nojoinspaces        "Prevents inserting two spaces after punctuation on a join
+
 set pumheight=5         "Show only 5 suggestions
 
 set splitbelow          "Horizontal split below current
@@ -18,19 +23,56 @@ set incsearch           "Incremental search
 set ignorecase
 set smartcase
 set inccommand=nosplit
-set foldmethod=syntax
+
 set nofoldenable        "Disable folding
-set laststatus=0        "Remove statusline
+
 set hidden              "if hidden not set, TextEdit might fail
+
 set cmdheight=1
+
 set noshowmode
+
 set noruler
+
 set cursorline
 
-"copied from coc.nvim
-set updatetime=300
-set shortmess+=c
-set signcolumn=yes
+set noshowmatch "don't jump to matching pair
+
+set lazyredraw
+
+if has('nvim') || has('termguicolors')
+    set termguicolors
+endif
+colorscheme new_dark
+
+set guicursor=
+
+set updatetime=300 "for coc.nvim
+
+set shortmess+=acW "remove/modify some messages
+
+set signcolumn=yes "always show signcolumn
+
+"Show next 3 lines while scrolling
+if !&scrolloff
+    set scrolloff=3
+endif
+
+"Show next 5 lines while side scrolling
+if !&sidescrolloff
+    set sidescrolloff=5
+endif
+
+"Use Ctrl+L to clear the highlighting of hlsearch
+if maparg('<C-L>', 'n') ==# ''
+    nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
+endif
+
+"CoC -----------------
+
+"Some servers have issues with backup files
+set nobackup
+set nowritebackup
 
 "Use `[c` and`]c` to navigate diagnostics
 nmap <silent> [c <Plug>(coc-diagnostic-prev)
@@ -53,14 +95,11 @@ function! s:show_documentation()
   endif
 endfunction
 
-" Highlight symbol under cursor on CursorHold
-" autocmd CursorHold * silent call CocActionAsync('highlight')
-
 " Remap for rename current word
 nmap <leader>rn <Plug>(coc-rename)
 
 " Remap for format selected region
-vmap <leader>f  <Plug>(coc-format-selected)
+xmap <leader>f  <Plug>(coc-format-selected)
 nmap <leader>f  <Plug>(coc-format-selected)
 
 augroup mygroup
@@ -74,7 +113,7 @@ augroup mygroup
 augroup end
 
 " Remap for do codeAction of selected region, ex: `<leader>aap` for current paragraph
-vmap <leader>a  <Plug>(coc-codeaction-selected)
+xmap <leader>a  <Plug>(coc-codeaction-selected)
 nmap <leader>a  <Plug>(coc-codeaction-selected)
 
 " Remap for do codeAction of current line
@@ -82,16 +121,29 @@ nmap <leader>ac  <Plug>(coc-codeaction)
 " Fix autofix problem of current line
 nmap <leader>qf  <Plug>(coc-fix-current)
 
+" Create mappings for function text object, requires document symbols feature of languageserver.
+xmap if <Plug>(coc-funcobj-i)
+xmap af <Plug>(coc-funcobj-a)
+omap if <Plug>(coc-funcobj-i)
+omap af <Plug>(coc-funcobj-a)
+
+" Use <C-d> for select selections ranges, needs server support, like: coc-tsserver, coc-python
+nmap <silent> <C-d> <Plug>(coc-range-select)
+xmap <silent> <C-d> <Plug>(coc-range-select)
+
 " Use `:Format` for format current buffer
 command! -nargs=0 Format :call CocAction('format')
 
-" Use `:Fold` for fold current buffer
-command! -nargs=? Fold :call     CocAction('fold', <f-args>)
+"Search for files from cwd
+nnoremap <silent> <leader>b : <C-u>CocList --number-select -A files<CR>
 
-"Use Ctrl+L to clear the highlighting of hlsearch
-if maparg('<C-L>', 'n') ==# ''
-    nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-endif
+" use `:OR` for organize import of current buffer
+command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organizeImport')
+
+"Grep text from cwd
+nnoremap <silent> <leader>g : <C-u>CocList --number-select -I grep<CR>
+
+"Other ---------------
 
 "Search and replace
 nnoremap <leader>h :%s//g<Left><Left>
@@ -109,6 +161,7 @@ filetype plugin indent on
 syntax on
 
 set undolevels=1000
+
 set backspace=indent,eol,start
 
 set clipboard+=unnamedplus "Enable xsel clipboard
@@ -119,39 +172,18 @@ nnoremap x "_x
 nnoremap X "_X
 nnoremap d "_d
 nnoremap D "_D
-vnoremap d "_d
-
+xnoremap d "_d
 nnoremap <leader>d "+d
 nnoremap <leader>D "+D
-vnoremap <leader>d "+d
+xnoremap <leader>d "+d
 
 "Autocomplete settings
-set completeopt-=preview
+set completeopt+=menuone "show completion menu even when there is only one match
+set completeopt-=preview "don't show extra information(handled by coc)
 inoremap <expr> <CR> pumvisible() ? '<C-e><CR>' : '<CR>' 
-
-"Show next 3 lines while scrolling
-if !&scrolloff
-    set scrolloff=3
-endif
-
-"Show next 5 lines while side scrolling
-if !&sidescrolloff
-    set sidescrolloff=5
-endif
 
 "Tap jj to escape to normal mode
 inoremap jj <Esc>`^
-
-"UI
-set showmatch
-set lazyredraw
-if has('nvim') || has('termguicolors')
-    set termguicolors
-endif
-
-colorscheme new_dark
-
-set guicursor=
 
 "save session
 nnoremap <leader>s :mksession<CR>
@@ -163,13 +195,4 @@ set undofile
 nnoremap <leader>w :w<CR>
 nnoremap <leader>x :x<CR>
 
-set path+=**
-
-"Open yank list using coc-lists and coc-yank
-nnoremap <silent> <leader>y :<C-u>CocList --number-select -A yank<CR>
-
-"Search for files from current cwd
-nnoremap <silent> <leader>b : <C-u>CocList --number-select -A files<CR>
-
-"Grep text from current cwd
-nnoremap <silent> <leader>g : <C-u>CocList --number-select -I grep<CR>
+set path+=** "use recursive search from cwd for all file commands like :find
