@@ -51,7 +51,7 @@ set updatetime=300 "for coc.nvim
 
 set shortmess+=acW "remove/modify some messages
 
-set signcolumn=yes "always show signcolumn
+set signcolumn=no "don't display sign column
 
 "Show next 3 lines while scrolling
 if !&scrolloff

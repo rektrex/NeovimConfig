@@ -79,8 +79,5 @@
     "list.source.quickfix.defaultOptions": ["--number-select"],
     "list.source.words.defaultOptions": ["--number-select"],
 
-    "coc.preferences.diagnostic.warningSign": "W",
-    "coc.preferences.diagnostic.errorSign": "E",
-    "coc.preferences.diagnostic.infoSign": "I",
-    "coc.preferences.diagnostic.hingSign": "H"
+    "diagnostic.enableSign": false
 }
