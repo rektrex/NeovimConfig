@@ -67,7 +67,7 @@ hi Constant guifg=#d75f87
 hi Tag gui=UNDERLINE
 
 " coc.nvim --------------------------------------------------------------------
-hi CocErrorSign   guibg=NONE guifg=#ff0000
+hi CocErrorSign   guibg=NONE guifg=#e76d6d
 hi CocWarningSign guibg=NONE guifg=#ff922b
 hi CocInfoSign    guibg=NONE guifg=#fab005
 hi CocHintSign    guibg=NONE guifg=#d75f87
