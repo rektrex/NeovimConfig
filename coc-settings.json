@@ -30,8 +30,6 @@
 
    "suggest.noselect": false,
 
-   "emmet.includeLanguages": {"javascript": "javascriptreact"},
-
    "python.jediEnabled": false,
 
    "list.normalMappings": {
@@ -53,9 +51,6 @@
     "list.source.folders.defaultOptions": ["--number-select"],
     "list.source.links.defaultOptions": ["--number-select"],
     "list.source.colors.defaultOptions": ["--number-select"],
-    "list.source.commits.defaultOptions": ["--number-select"],
-    "list.source.gstatus.defaultOptions": ["--number-select"],
-    "list.source.issues.defaultOptions": ["--number-select"],
     "list.source.helptags.defaultOptions": ["--number-select"],
     "list.source.extensions.defaultOptions": ["--number-select"],
     "list.source.location.defaultOptions": ["--number-select"],
@@ -82,20 +77,5 @@
     "list.source.grep.defaultOptions": ["--number-select"],
     "list.source.locationlist.defaultOptions": ["--number-select"],
     "list.source.quickfix.defaultOptions": ["--number-select"],
-    "list.source.words.defaultOptions": ["--number-select"],
-    "list.source.yank.defaultOptions": ["--number-select"],
-    "list.source.branches.defaultOptions": ["--number-select"],
-    "list.source.bcommits.defaultOptions": ["--number-select"],
-    "list.source.gfiles.defaultOptions": ["--number-select"],
-
-    "solargraph.diagnostics": true,
-    "solargraph.completion": true,
-    "solargraph.hover": true,
-    "solargraph.autoformat": true,
-    "solargraph.formatting": true,
-    "solargraph.symbols": true,
-    "solargraph.definitions": true,
-    "solargraph.rename": true,
-    "solargraph.references": true,
-    "solargraph.folding": false
+    "list.source.words.defaultOptions": ["--number-select"]
 }
