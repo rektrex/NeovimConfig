@@ -47,10 +47,6 @@
       "<C-s>": "action:split"
     },
 
-    "git.enableGutters": true,
-    "git.realtimeGutters": true,
-    "coc.source.issues.enable": false,
-
     "list.source.lists.defaultOptions": ["--number-select"],
     "list.source.mru.defaultOptions": ["--number-select"],
     "list.source.commands.defaultOptions": ["--number-select"],
