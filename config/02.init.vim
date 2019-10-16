@@ -83,7 +83,6 @@ nmap <silent> ]c <Plug>(coc-diagnostic-next)
 "Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
-nmap <silent> gi <Plug>(coc-implementation)
 nmap <silent> gt <Plug>(coc-references)
 
 " Use K for show documentation in preview window
@@ -144,6 +143,9 @@ command! -nargs=0 OR   :call     CocAction('runCommand', 'editor.action.organize
 
 "Grep text from cwd
 nnoremap <silent> <leader>g : <C-u>CocList --number-select -I grep<CR>
+
+"Open CocList
+nnoremap <silent> <leader>l : <C-u>CocList --number-select<CR>
 
 "Other ---------------
 
