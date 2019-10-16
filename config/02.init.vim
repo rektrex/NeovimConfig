@@ -184,8 +184,8 @@ set completeopt+=menuone "show completion menu even when there is only one match
 set completeopt-=preview "don't show extra information(handled by coc)
 inoremap <expr> <CR> pumvisible() ? '<C-e><CR>' : '<CR>' 
 
-"Tap jj to escape to normal mode
-inoremap jj <Esc>`^
+"Tap jk to escape to normal mode
+inoremap jk <Esc>`^
 
 "save session
 nnoremap <leader>s :mksession<CR>
