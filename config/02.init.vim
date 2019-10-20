@@ -180,6 +180,8 @@ xnoremap d "_d
 nnoremap <leader>d "+d
 nnoremap <leader>D "+D
 xnoremap <leader>d "+d
+nnoremap <leader>x "+x
+nnoremap <leader>X "+X
 
 "Autocomplete settings
 set completeopt+=menuone "show completion menu even when there is only one match
@@ -195,8 +197,5 @@ nnoremap <leader>s :mksession<CR>
 "persistent undo
 set undodir=~/.local/share/nvim/undodir
 set undofile
-
-nnoremap <leader>w :w<CR>
-nnoremap <leader>x :x<CR>
 
 set path+=** "use recursive search from cwd for all file commands like :find
