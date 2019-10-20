@@ -198,4 +198,6 @@ nnoremap <leader>s :mksession<CR>
 set undodir=~/.local/share/nvim/undodir
 set undofile
 
+nnoremap <leader>w :w<CR>
+
 set path+=** "use recursive search from cwd for all file commands like :find
