@@ -14,7 +14,7 @@ set background=dark
 " colors ----------------------------------------------------------------------
 
 hi Cursor         guibg=#c8c8c8 guifg=NONE    gui=NONE
-hi Normal         guibg=#2d2d2d guifg=#dfdfdf gui=NONE
+hi Normal         guibg=#212121 guifg=#dfdfdf gui=NONE
 hi Title          guibg=NONE    guifg=#dfdfdf gui=BOLDUNDERLINE
 hi Comment        guibg=NONE    guifg=#6f6f6f gui=NONE
 hi SpecialComment guibg=NONE    guifg=BROWN   gui=NONE
@@ -25,23 +25,23 @@ hi CursorLineNr   guibg=NONE    guifg=BROWN   gui=NONE
 hi ColorColumn    guibg=NONE    guifg=NONE    gui=NONE
 hi SignColumn     guibg=NONE    guifg=NONE    gui=NONE
 hi Underlined     guibg=NONE    guifg=NONE    gui=UNDERLINE
-hi Visual         guibg=#2d2d2d guifg=#6f6f6f gui=REVERSE
+hi Visual         guibg=#212121 guifg=#6f6f6f gui=REVERSE
 hi VisualNOS      guibg=NONE    guifg=NONE    gui=UNDERLINE
 hi MatchParen     guibg=NONE    guifg=#dfdfdf gui=BOLD
-hi IncSearch      guibg=#dfc56d guifg=#2d2d2d gui=BOLD
-hi Search         guibg=#dfc56d guifg=#2d2d2d gui=BOLD
+hi IncSearch      guibg=#dfc56d guifg=#212121 gui=BOLD
+hi Search         guibg=#dfc56d guifg=#212121 gui=BOLD
 hi CursorColumn   guibg=NONE    guifg=NONE    gui=NONE
-hi CursorLine     guibg=#444444 guifg=NONE    gui=NONE
+hi CursorLine     guibg=#373737 guifg=NONE    gui=NONE
 hi VertSplit      guibg=NONE    guifg=#dfdfdf gui=BOLD
 hi WildMenu       guibg=NONE    guifg=#073642 gui=BOLDUNDERLINE
 hi DiffAdd        guibg=NONE    guifg=#88c563 gui=NONE
 hi DiffDelete     guibg=NONE    guifg=#e76d6d gui=NONE
 hi DiffChange     guibg=NONE    guifg=#ecb534 gui=UNDERLINE
 hi DiffText       guibg=NONE    guifg=#ecb534 gui=NONE
-hi Pmenu          guibg=#444444 guifg=#dfdfdf gui=NONE
-hi PmenuSel       guibg=#444444 guifg=#d75f87 gui=BOLD
-hi PmenuSbar      guibg=#444444 guifg=#073642 gui=NONE
-hi PmenuThumb     guibg=#d75f87 guifg=#dfdfdf gui=NONE
+hi Pmenu          guibg=#373737 guifg=#dfdfdf gui=NONE
+hi PmenuSel       guibg=#373737 guifg=#ff6188 gui=BOLD
+hi PmenuSbar      guibg=#373737 guifg=#073642 gui=NONE
+hi PmenuThumb     guibg=#ff6188 guifg=#dfdfdf gui=NONE
 hi SpellBad       guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 hi SpellCap       guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 hi SpellLocal     guibg=NONE    guifg=#edbabf gui=UNDERCURL
@@ -52,7 +52,7 @@ hi MoreMsg        guibg=NONE    guifg=#dc322f gui=NONE
 hi Question       guibg=NONE    guifg=#dc322f gui=NONE
 hi Error          guibg=NONE    guifg=#dc322f gui=REVERSE
 hi Ignore         guibg=NONE    guifg=NONE    gui=NONE
-hi EndOfBuffer    guibg=NONE    guifg=#2d2d2d gui=NONE
+hi EndOfBuffer    guibg=NONE    guifg=#212121 gui=NONE
 hi NonText        guibg=NONE    guifg=#dc322f gui=NONE
 hi SpecialKey     guibg=NONE    guifg=#e76d6d gui=UNDERCURL
 hi Statusline     guibg=NONE    guifg=#6f6f6f gui=UNDERLINE
@@ -67,7 +67,7 @@ hi clear PreProc
 hi clear Special
 hi clear Identifier
 
-hi Constant guifg=#d75f87
+hi Constant guifg=#ff6188
 hi Tag gui=UNDERLINE
 
 " coc.nvim --------------------------------------------------------------------
@@ -75,7 +75,7 @@ hi Tag gui=UNDERLINE
 hi CocErrorSign   guibg=NONE guifg=#e76d6d
 hi CocWarningSign guibg=NONE guifg=#ff922b
 hi CocInfoSign    guibg=NONE guifg=#fab005
-hi CocHintSign    guibg=NONE guifg=#d75f87
+hi CocHintSign    guibg=NONE guifg=#ff6188
 
 " Help ------------------------------------------------------------------------
 
