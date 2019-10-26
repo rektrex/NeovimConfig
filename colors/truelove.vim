@@ -48,7 +48,7 @@ hi MoreMsg guibg=NONE guifg=#dfc56d gui=NONE
 hi Question guibg=NONE guifg=#dfc56d gui=NONE
 hi Error guibg=NONE guifg=#e76d6d gui=REVERSE
 hi Ignore guibg=NONE guifg=NONE gui=NONE
-hi EndOfBuffer guibg=NONE guifg=#dfdfdf gui=NONE
+hi EndOfBuffer guibg=NONE guifg=#212121 gui=NONE
 hi NonText guibg=NONE guifg=#e76d6d gui=NONE
 hi SpecialKey guibg=NONE guifg=#e76d6d gui=UNDERCURL
 hi Statusline guibg=NONE guifg=#6f6f6f gui=UNDERLINE
