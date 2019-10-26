@@ -52,6 +52,7 @@ hi EndOfBuffer guibg=NONE guifg=#212121 gui=NONE
 hi NonText guibg=NONE guifg=#e76d6d gui=NONE
 hi SpecialKey guibg=NONE guifg=#e76d6d gui=UNDERCURL
 hi Statusline guibg=NONE guifg=#6f6f6f gui=UNDERLINE
+hi StatuslineNC guibg=NONE guifg=#6f6f6f gui=NONE
 
 " clear & override-----------------------------------------------------------
 
