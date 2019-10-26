@@ -42,9 +42,7 @@ set lazyredraw
 
 if has('nvim') || has('termguicolors')
     set termguicolors
-    let g:micro_coc_status = 1
-    let g:micro_theme_statusline = 1
-    colorscheme micro
+    colorscheme truelove
 endif
 
 set guicursor=
