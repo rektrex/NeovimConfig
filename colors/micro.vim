@@ -28,8 +28,8 @@ hi Underlined     guibg=NONE    guifg=NONE    gui=UNDERLINE
 hi Visual         guibg=#212121 guifg=#6f6f6f gui=REVERSE
 hi VisualNOS      guibg=NONE    guifg=NONE    gui=UNDERLINE
 hi MatchParen     guibg=NONE    guifg=#dfdfdf gui=BOLD
-hi IncSearch      guibg=#dfc56d guifg=#212121 gui=BOLD
-hi Search         guibg=#dfc56d guifg=#212121 gui=BOLD
+hi IncSearch      guibg=#dfc56d guifg=#212121 gui=NONE
+hi Search         guibg=#dfc56d guifg=#212121 gui=NONE
 hi CursorColumn   guibg=NONE    guifg=NONE    gui=NONE
 hi CursorLine     guibg=#373737 guifg=NONE    gui=NONE
 hi VertSplit      guibg=NONE    guifg=#dfdfdf gui=BOLD
@@ -39,7 +39,7 @@ hi DiffDelete     guibg=NONE    guifg=#e76d6d gui=NONE
 hi DiffChange     guibg=NONE    guifg=#ecb534 gui=UNDERLINE
 hi DiffText       guibg=NONE    guifg=#ecb534 gui=NONE
 hi Pmenu          guibg=#373737 guifg=#dfdfdf gui=NONE
-hi PmenuSel       guibg=#373737 guifg=#ff6188 gui=BOLD
+hi PmenuSel       guibg=#373737 guifg=#ff6188 gui=NONE
 hi PmenuSbar      guibg=#373737 guifg=#073642 gui=NONE
 hi PmenuThumb     guibg=#ff6188 guifg=#dfdfdf gui=NONE
 hi SpellBad       guibg=NONE    guifg=#e76d6d gui=UNDERCURL
