@@ -20,5 +20,3 @@ let g:haskell_indent_after_bare_where = 2
 let g:haskell_indent_do = 3
 let g:haskell_indent_in = 1
 let g:haskell_indent_guard = 2
-
-let g:sml_auto_create_def_use = 'never'
