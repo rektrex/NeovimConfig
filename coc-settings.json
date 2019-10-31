@@ -1,11 +1,5 @@
 {
   "languageserver": {
-    "clangd": {
-      "command": "clangd",
-      "rootPatterns": ["compile_flags.txt", "compile_commands.json", ".vim/", ".git/", ".hg/"],
-      "filetypes": ["c", "cpp", "objc", "objcpp"]
-    },
-    
     "haskell": {
       "command": "hie-wrapper",
       "rootPatterns": [
@@ -27,12 +21,6 @@
    },
 
    "rust-client.channel": "stable",
-   "rust.crate_blacklist": {
-     "default": true,
-     "description": "Don't index crates on the crate blacklist.",
-     "scope": "resource",
-     "type": "boolean"
-   },
 
    "suggest.noselect": false,
 
