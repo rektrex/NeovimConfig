@@ -13,8 +13,8 @@ set background=dark
 hi Normal guibg=#212121 guifg=#dfdfdf gui=NONE
 hi Cursor guibg=#c8c8c8 guifg=NONE gui=NONE
 hi Title guibg=NONE guifg=#dfdfdf gui=BOLDUNDERLINE
-hi Comment guibg=NONE guifg=#6f6f6f gui=NONE
-hi SpecialComment guibg=NONE guifg=BROWN gui=NONE
+hi Comment guibg=NONE guifg=#6f6f6f gui=ITALIC
+hi SpecialComment guibg=NONE guifg=BROWN gui=ITALIC
 hi Todo guibg=NONE guifg=BROWN gui=UNDERLINE
 hi Directory guibg=NONE guifg=#dfc56d gui=NONE
 hi LineNR guibg=NONE guifg=#6f6f6f gui=NONE
