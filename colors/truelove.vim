@@ -51,8 +51,13 @@ hi Ignore guibg=NONE guifg=NONE gui=NONE
 hi EndOfBuffer guibg=NONE guifg=#212121 gui=NONE
 hi NonText guibg=NONE guifg=#e76d6d gui=NONE
 hi SpecialKey guibg=NONE guifg=#e76d6d gui=UNDERCURL
-hi Statusline guibg=NONE guifg=#6f6f6f gui=UNDERLINE
-hi StatuslineNC guibg=NONE guifg=#6f6f6f gui=NONE
+hi Statusline guibg=NONE guifg=NONE gui=NONE
+hi StatuslineNC guibg=NONE guifg=NONE gui=NONE
+hi NormalColor guibg=#dfc56d guifg=#212121 gui=NONE
+hi InsertColor guibg=#88c563 guifg=#212121 gui=NONE
+hi VisualColor guibg=#6f6f6f guifg=#212121 gui=NONE
+hi ReplaceColor guibg=#e76d6d guifg=#212121 gui=NONE
+hi CocStatusColor guibg=#e76d6d guifg=#212121 gui=NONE
 
 " clear & override-----------------------------------------------------------
 
@@ -93,32 +98,56 @@ hi link javaScriptNull javaScriptValue
 
 " statusline-----------------------------------------------------------------
 
+hi link statuscolor NormalColor
+
 set statusline=
-set statusline+=\ %{StatuslineMode()}
+set statusline+=%#statuscolor#
+set statusline+=\ %{StatuslineMode()}\ 
+set statusline+=%#Statusline#
 set statusline+=%=
-set statusline+=%{coc#status()}\ 
+set statusline+=%#cocstatuscolor#
+set statusline+=%{CocStatus()}
+set statusline+=%#statuscolor#
 set statusline+=\ %t
 set statusline+=%m
-set statusline+=%r
+set statusline+=%r\ 
+set statusline+=%#Statusline#
 set laststatus=2
+
+function! CocStatus()
+    let l:status=coc#status()
+    if strlen(trim(l:status)) == 0
+        return ""
+    else
+        return " " . l:status . " "
+    endif
+endfunction
 
 function! StatuslineMode()
     let l:mode=mode()
     if l:mode==#"n"
+        hi link statuscolor NormalColor
         return "NORMAL"
     elseif l:mode==?"v"
+        hi link statuscolor VisualColor
         return "VISUAL"
     elseif l:mode==#"i"
+        hi link statuscolor InsertColor
         return "INSERT"
     elseif l:mode==#"R"
+        hi link statuscolor ReplaceColor
         return "REPLACE"
     elseif l:mode==?"s"
+        hi link statuscolor VisualColor
         return "SELECT"
     elseif l:mode==#"t"
+        hi link statuscolor NormalColor
         return "TERMINAL"
     elseif l:mode==#"c"
+        hi link statuscolor NormalColor
         return "COMMAND"
     elseif l:mode==#"!"
+        hi link statuscolor NormalColor
         return "SHELL"
     endif
 endfunction
