@@ -73,5 +73,7 @@
     "list.source.quickfix.defaultOptions": ["--number-select"],
     "list.source.words.defaultOptions": ["--number-select"],
 
-    "diagnostic.enableSign": false
+    "diagnostic.enableSign": false,
+
+    "explorer.icon.enableNerdfont": true
 }
