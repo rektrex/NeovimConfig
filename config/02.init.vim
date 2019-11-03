@@ -146,7 +146,7 @@ nnoremap <silent> <leader>g : <C-u>CocList --number-select -I grep<CR>
 nnoremap <silent> <leader>l : <C-u>CocList --number-select<CR>
 
 "Open coc-explorer
-nnoremap ge :CocCommand explorer<CR>
+nnoremap <silent>ge :CocCommand explorer<CR>
 
 "Other ---------------
 
