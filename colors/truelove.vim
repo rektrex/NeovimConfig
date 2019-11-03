@@ -51,8 +51,8 @@ hi Ignore guibg=NONE guifg=NONE gui=NONE
 hi EndOfBuffer guibg=NONE guifg=#212121 gui=NONE
 hi NonText guibg=NONE guifg=#e76d6d gui=NONE
 hi SpecialKey guibg=NONE guifg=#e76d6d gui=UNDERCURL
-hi Statusline guibg=NONE guifg=NONE gui=NONE
-hi StatuslineNC guibg=NONE guifg=NONE gui=NONE
+hi Statusline guibg=#373737 guifg=NONE gui=NONE
+hi StatuslineNC guibg=#373737 guifg=NONE gui=NONE
 hi NormalColor guibg=#dfc56d guifg=#212121 gui=NONE
 hi InsertColor guibg=#88c563 guifg=#212121 gui=NONE
 hi VisualColor guibg=#6f6f6f guifg=#212121 gui=NONE
