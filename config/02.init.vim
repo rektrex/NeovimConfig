@@ -187,7 +187,6 @@ nnoremap <leader>X "+X
 "Autocomplete settings
 set completeopt+=menuone "show completion menu even when there is only one match
 set completeopt-=preview "don't show extra information(handled by coc)
-inoremap <expr> <CR> pumvisible() ? '<C-e><CR>' : '<CR>' 
 
 "Tap jk to escape to normal mode
 inoremap jk <Esc>`^
