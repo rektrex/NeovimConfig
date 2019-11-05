@@ -201,3 +201,6 @@ set undofile
 nnoremap <leader>w :w<CR>
 
 set path+=** "use recursive search from cwd for all file commands like :find
+
+"json comments syntax highlighting
+autocmd FileType json syntax match Comment +\/\/.\+$+
