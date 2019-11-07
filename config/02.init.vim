@@ -145,9 +145,6 @@ nnoremap <silent> <leader>g : <C-u>CocList --number-select -I grep<CR>
 "Open CocList
 nnoremap <silent> <leader>l : <C-u>CocList --number-select<CR>
 
-"Open coc-explorer
-nnoremap <silent>ge :CocCommand explorer<CR>
-
 "Other ---------------
 
 "Search and replace
