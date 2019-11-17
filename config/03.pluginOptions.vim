@@ -21,8 +21,7 @@ let g:haskell_indent_do = 3
 let g:haskell_indent_in = 1
 let g:haskell_indent_guard = 2
 
-"ncm2
-autocmd BufEnter * call ncm2#enable_for_buffer()
+"floating window for completion
 let g:float_preview#docked = 1
 
 "fzf
@@ -52,3 +51,6 @@ function! FloatingFZF()
 
     call nvim_open_win(buf, v:true, opts)
 endfunction
+
+"deoplete
+let g:deoplete#enable_at_startup = 1
