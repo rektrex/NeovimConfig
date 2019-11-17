@@ -138,7 +138,7 @@ call lsp#add_filetype_config({
 call lsp#add_filetype_config({
     \ 'filetype': 'haskell',
     \ 'name': 'hie',
-    \ 'cmd': 'hie',
+    \ 'cmd': 'hie-wrapper',
     \ })
 
 call lsp#add_filetype_config({
