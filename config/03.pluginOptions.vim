@@ -21,33 +21,5 @@ let g:haskell_indent_do = 3
 let g:haskell_indent_in = 1
 let g:haskell_indent_guard = 2
 
-"fzf
-nnoremap <leader>r :Rg<CR>
-nnoremap <leader>f :Files<CR>
-nnoremap <leader>c :Commands<CR>
-
-let g:fzf_buffers_jump = 1
-let g:fzf_commands_expect = 'enter'
-
-let g:fzf_layout = { 'window': 'call FloatingFZF()' }
-
-function! FloatingFZF()
-    let buf = nvim_create_buf(v:false, v:true)
-    let height = float2nr(&lines * 0.5)
-    let width = float2nr(&columns * 0.6)
-    let horizontal = float2nr((&columns - width) / 2)
-    let vertical = 1
-
-    let opts = {
-        \ 'relative': 'editor',
-        \ 'row': vertical,
-        \ 'col': horizontal,
-        \ 'width': width,
-        \ 'height': height
-        \ }
-
-    call nvim_open_win(buf, v:true, opts)
-endfunction
-
 "deoplete
 let g:deoplete#enable_at_startup = 1

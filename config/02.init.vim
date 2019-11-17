@@ -154,3 +154,15 @@ call lsp#add_filetype_config({
 "set title of the window
 autocmd BufEnter * let &titlestring = ' ' . expand(@%)
 set title
+
+"use ripgrep for grep
+if executable('rg')
+    set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+    set grepformat=%f:%l:%c:%m,%f:%l:%m
+endif
+
+augroup quickfix
+    autocmd!
+    autocmd QuickFixCmdPost [^l]* cwindow
+    autocmd QuickFixCmdPost l* lwindow
+augroup END
