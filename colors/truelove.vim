@@ -13,8 +13,8 @@ set background=dark
 hi Normal guibg=#212121 guifg=#dfdfdf gui=NONE
 hi Cursor guibg=#c8c8c8 guifg=NONE gui=NONE
 hi Title guibg=NONE guifg=#dfdfdf gui=BOLDUNDERLINE
-hi Comment guibg=NONE guifg=#6f6f6f gui=ITALIC
-hi SpecialComment guibg=NONE guifg=BROWN gui=ITALIC
+hi Comment guibg=NONE guifg=#6f6f6f gui=NONE
+hi SpecialComment guibg=NONE guifg=BROWN gui=NONE
 hi Todo guibg=NONE guifg=BROWN gui=UNDERLINE
 hi Directory guibg=NONE guifg=#dfc56d gui=NONE
 hi LineNR guibg=NONE guifg=#6f6f6f gui=NONE
@@ -35,9 +35,9 @@ hi DiffDelete guibg=NONE guifg=#e76d6d gui=NONE
 hi DiffChange guibg=NONE guifg=#dfc56d gui=NONE
 hi DiffText guibg=NONE guifg=#dfc56d gui=NONE
 hi Pmenu guibg=#373737 guifg=#dfdfdf gui=NONE
-hi PmenuSel guibg=#373737 guifg=#ff6188 gui=NONE
+hi PmenuSel guibg=#dfc56d guifg=#212121 gui=NONE
 hi PmenuSbar guibg=#373737 guifg=#88c563 gui=NONE
-hi PmenuThumb guibg=#ff6188 guifg=#dfdfdf gui=NONE
+hi PmenuThumb guibg=#dfdfdf guifg=#dfc56d gui=NONE
 hi SpellBad guibg=NONE guifg=#e76d6d gui=UNDERCURL
 hi SpellCap guibg=NONE guifg=#dfc56d gui=UNDERCURL
 hi SpellLocal guibg=NONE guifg=#dfc56d gui=UNDERCURL
@@ -53,10 +53,6 @@ hi NonText guibg=NONE guifg=#e76d6d gui=NONE
 hi SpecialKey guibg=NONE guifg=#e76d6d gui=UNDERCURL
 hi Statusline guibg=#373737 guifg=NONE gui=NONE
 hi StatuslineNC guibg=#373737 guifg=NONE gui=NONE
-hi NormalColor guibg=#dfc56d guifg=#212121 gui=NONE
-hi InsertColor guibg=#88c563 guifg=#212121 gui=NONE
-hi VisualColor guibg=#6f6f6f guifg=#212121 gui=NONE
-hi ReplaceColor guibg=#e76d6d guifg=#212121 gui=NONE
 
 " clear & override-----------------------------------------------------------
 
@@ -67,7 +63,6 @@ hi clear Function
 hi clear PreProc
 hi clear Special
 hi clear Identifier
-hi Constant guibg=NONE guifg=#ff6188 gui=NONE
 hi Tag guibg=NONE guifg=NONE gui=UNDERLINE
 
 " Help-----------------------------------------------------------------------
