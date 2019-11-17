@@ -34,6 +34,8 @@ set noshowmode
 
 set noruler
 
+set laststatus=0
+
 set cursorline
 
 set noshowmatch "don't jump to matching pair
