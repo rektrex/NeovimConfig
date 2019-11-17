@@ -148,3 +148,7 @@ call lsp#add_filetype_config({
     \   'jedi_hover': { 'enabled': v:true, },
     \ },
     \ })
+
+"set title of the window
+autocmd BufEnter * let &titlestring = ' ' . expand(@%)
+set title
