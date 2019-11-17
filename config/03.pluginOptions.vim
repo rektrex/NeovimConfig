@@ -21,9 +21,6 @@ let g:haskell_indent_do = 3
 let g:haskell_indent_in = 1
 let g:haskell_indent_guard = 2
 
-"floating window for completion
-let g:float_preview#docked = 1
-
 "fzf
 nnoremap <leader>r :Rg<CR>
 nnoremap <leader>f :Files<CR>
