@@ -147,7 +147,3 @@ call lsp#add_filetype_config({
     \   'jedi_hover': { 'enabled': v:true, },
     \ },
     \ })
-
-" set omnifunc=syntaxcomplete#Complete
-
-" autocmd FileType haskell,rust,python setl omnifunc=lsp#omnifunc
