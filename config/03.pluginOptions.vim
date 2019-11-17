@@ -24,3 +24,6 @@ let g:haskell_indent_guard = 2
 "ncm2
 autocmd BufEnter * call ncm2#enable_for_buffer()
 let g:float_preview#docked = 1
+
+"fzf
+let g:fzf_layout = { 'window': '10new' }

@@ -4,7 +4,10 @@ call plug#begin()
 Plug 'tmsvg/pear-tree'
 Plug 'tpope/vim-commentary'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
 
+"ncm2
 Plug 'ncm2/ncm2'
 Plug 'roxma/nvim-yarp'
 Plug 'ncm2/ncm2-bufword'
