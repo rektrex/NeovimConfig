@@ -57,7 +57,6 @@ hi NormalColor guibg=#dfc56d guifg=#212121 gui=NONE
 hi InsertColor guibg=#88c563 guifg=#212121 gui=NONE
 hi VisualColor guibg=#6f6f6f guifg=#212121 gui=NONE
 hi ReplaceColor guibg=#e76d6d guifg=#212121 gui=NONE
-hi CocStatusColor guibg=#e76d6d guifg=#212121 gui=NONE
 
 " clear & override-----------------------------------------------------------
 
@@ -70,13 +69,6 @@ hi clear Special
 hi clear Identifier
 hi Constant guibg=NONE guifg=#ff6188 gui=NONE
 hi Tag guibg=NONE guifg=NONE gui=UNDERLINE
-
-" coc.nvim-------------------------------------------------------------------
-
-hi CocErrorSign guibg=NONE guifg=#e76d6d gui=NONE
-hi CocWarningSign guibg=NONE guifg=#dfc56d gui=NONE
-hi CocInfoSign guibg=NONE guifg=#dfc56d gui=NONE
-hi CocHintSign guibg=NONE guifg=#dfc56d gui=NONE
 
 " Help-----------------------------------------------------------------------
 
@@ -105,23 +97,12 @@ set statusline+=%#statuscolor#
 set statusline+=\ %{StatuslineMode()}\ 
 set statusline+=%#Statusline#
 set statusline+=%=
-set statusline+=%#cocstatuscolor#
-set statusline+=%{CocStatus()}
 set statusline+=%#statuscolor#
 set statusline+=\ %t
 set statusline+=%m
 set statusline+=%r\ 
 set statusline+=%#Statusline#
 set laststatus=2
-
-function! CocStatus()
-    let l:status=coc#status()
-    if strlen(trim(l:status)) == 0
-        return ""
-    else
-        return " " . l:status . " "
-    endif
-endfunction
 
 function! StatuslineMode()
     let l:mode=mode()
