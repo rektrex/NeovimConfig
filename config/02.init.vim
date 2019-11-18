@@ -193,3 +193,7 @@ set wildignorecase
 "move up and down based on display lines
 nnoremap <silent> j gj
 nnoremap <silent> k gk
+
+"move to prev and next buffers, similar to tabs in qutebrowser
+nnoremap <C-j> :bnext<CR>
+nnoremap <C-k> :bprev<CR>
