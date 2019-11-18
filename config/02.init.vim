@@ -120,7 +120,8 @@ set undodir=~/.local/share/nvim/undodir
 set undofile
 
 nnoremap <leader>w :w<CR>
-nnoremap <silent> <leader>q :q<CR>
+nnoremap <leader>q :q<CR>
+nnoremap <leader>Q :q!<CR>
 
 "json comments syntax highlighting
 autocmd FileType json syntax match Comment +\/\/.\+$+
