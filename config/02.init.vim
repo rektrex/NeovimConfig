@@ -203,3 +203,6 @@ nnoremap <silent> <C-k> :bprev<CR>
 "move to prev and next items in the quickfix list
 nnoremap <silent> <C-n> :cn<CR>
 nnoremap <silent> <C-p> :cp<CR>
+
+"shortcut to open quickfix list
+nnoremap <silent> gq :cw<CR>
