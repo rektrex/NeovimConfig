@@ -144,6 +144,7 @@ call lsp#add_filetype_config({
     \ 'enable': v:true,
     \ 'plugins': {
     \   'jedi_hover': { 'enabled': v:true, },
+    \   'jedi_completion': { 'enabled': v:true, },
     \ },
     \ })
 
@@ -188,3 +189,7 @@ set wildignore+=*.tar.*
 set wildignorecase
 
 "end of romainl's wisdom
+
+"move up and down based on display lines
+nnoremap <silent> j gj
+nnoremap <silent> k gk
