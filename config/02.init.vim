@@ -72,7 +72,7 @@ nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
 "Search and replace
 nnoremap <leader>h :%s//g<Left><Left>
-vnoremap <leader>h :s//g<Left><Left>
+xnoremap <leader>h :s//g<Left><Left>
 
 "Indentation rules and use spaces
 set autoindent
