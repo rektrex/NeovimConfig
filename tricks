@@ -6,4 +6,4 @@ increment a visual block: <count>g<c-a>
 
 :r!seq N generate numbers from 1 to N separated by newline
 
-use :b <search_term> to switch to file including <search_term> in it's name
+use ]p to paste with automatic indentation
