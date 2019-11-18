@@ -177,8 +177,8 @@ nnoremap gb :ls<CR>:b<Space>
 
 "find files recursively, under the cwd(todo, follow gitignore)
 set path=.,**
-nnoremap <leader>f :find *
-nnoremap <leader>v :vert sfind *
+nnoremap <leader>f :find<Space>
+nnoremap <leader>v :vert sfind<Space>
 
 "prune wildmenu completions
 set wildignore=*.swp,*.bak
