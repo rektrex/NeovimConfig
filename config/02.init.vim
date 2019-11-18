@@ -164,6 +164,7 @@ augroup quickfix
     autocmd!
     autocmd QuickFixCmdPost [^l]* cwindow
     autocmd QuickFixCmdPost l* lwindow
+    autocmd FileType qf nnoremap <silent> <buffer> <CR> <CR>:cclose<CR>
 augroup END
 
 "mapping to do a silent grep
