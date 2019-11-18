@@ -196,9 +196,9 @@ nnoremap <silent> j gj
 nnoremap <silent> k gk
 
 "move to prev and next buffers, similar to tabs in qutebrowser
-nnoremap <C-j> :bnext<CR>
-nnoremap <C-k> :bprev<CR>
+nnoremap <silent> <C-j> :bnext<CR>
+nnoremap <silent> <C-k> :bprev<CR>
 
 "move to prev and next items in the quickfix list
-nnoremap <C-n> :cn<CR>
-nnoremap <C-p> :cp<CR>
+nnoremap <silent> <C-n> :cn<CR>
+nnoremap <silent> <C-p> :cp<CR>
