@@ -208,3 +208,14 @@ nnoremap <silent> <C-p> :cp<CR>
 
 "shortcut to open quickfix list
 nnoremap <silent> gq :cw<CR>
+
+"minimal auto pairing
+set matchpairs+=<:>
+
+inoremap {<CR> {<CR>}<Esc>O
+inoremap [<CR> [<CR>]<Esc>O
+inoremap (<CR> (<CR>)<Esc>O
+inoremap {<Space> {<Space><Space>}<Left><Left>
+inoremap [<Space> [<Space><Space>]<Left><Left>
+inoremap {; {<Space><Space>};<Left><Left><Left>
+inoremap [; [<Space><Space>];<Left><Left><Left>
