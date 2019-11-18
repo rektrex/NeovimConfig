@@ -23,7 +23,7 @@ hi SignColumn guibg=NONE guifg=NONE gui=NONE
 hi Underlined guibg=NONE guifg=NONE gui=UNDERLINE
 hi Visual guibg=#212121 guifg=#6f6f6f gui=UNDERLINE
 hi VisualNOS guibg=NONE guifg=NONE gui=UNDERLINE
-hi MatchParen guibg=NONE guifg=NONE gui=BOLD
+hi MatchParen guibg=#83a598 guifg=#212121 gui=BOLD
 hi IncSearch guibg=#dfc56d guifg=#212121 gui=NONE
 hi Search guibg=#dfc56d guifg=#212121 gui=NONE
 hi CursorColumn guibg=NONE guifg=NONE gui=NONE
