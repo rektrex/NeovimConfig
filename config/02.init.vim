@@ -164,4 +164,27 @@ augroup quickfix
     autocmd QuickFixCmdPost l* lwindow
 augroup END
 
+"mapping to do a silent grep
 nnoremap <leader>g :silent grep!<Space>
+
+"wisdom from romainl's answer here: https://stackoverflow.com/questions/16082991/vim-switching-between-files-rapidly-using-vanilla-vim-no-plugins
+
+"list all buffers, and wait for input to switch to a buffer
+nnoremap gb :ls<CR>:b<Space>
+
+"find files recursively, under the cwd(todo, follow gitignore)
+set path=.,**
+nnoremap <leader>f :find *
+nnoremap <leader>v :vert sfind *
+
+"prune wildmenu completions
+set wildignore=*.swp,*.bak
+set wildignore+=*.pyc,*.class,*.sln,*.Master,*.csproj,*.csproj.user,*.cache,*.dll,*.pdb,*.min.*
+set wildignore+=*/.git/**/*,*/.hg/**/*,*/.svn/**/*
+set wildignore+=tags
+set wildignore+=*.tar.*
+
+"ignore case when searching in wildmenu
+set wildignorecase
+
+"end of romainl's wisdom
