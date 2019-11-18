@@ -66,9 +66,7 @@ if !&sidescrolloff
 endif
 
 "Use Ctrl+L to clear the highlighting of hlsearch
-if maparg('<C-L>', 'n') ==# ''
-    nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
-endif
+nnoremap <silent> <C-L> :nohlsearch<CR><C-L>
 
 "Other ---------------
 
@@ -161,8 +159,11 @@ if executable('rg')
     set grepformat=%f:%l:%c:%m,%f:%l:%m
 endif
 
+"automatically show quickfix list after grep
 augroup quickfix
     autocmd!
     autocmd QuickFixCmdPost [^l]* cwindow
     autocmd QuickFixCmdPost l* lwindow
 augroup END
+
+nnoremap <leader>g :silent grep!<Space>
