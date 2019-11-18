@@ -185,6 +185,8 @@ set wildignore=*.swp,*.bak
 set wildignore+=*.pyc,*.class,*.sln,*.Master,*.csproj,*.csproj.user,*.cache,*.dll,*.pdb,*.min.*
 set wildignore+=*/.git/**/*,*/.hg/**/*,*/.svn/**/*
 set wildignore+=tags
+set wildignore+=*/target/**/*
+set wildignore+=target/
 set wildignore+=*.tar.*
 
 "ignore case when searching in wildmenu
