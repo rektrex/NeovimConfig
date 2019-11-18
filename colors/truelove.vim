@@ -35,9 +35,9 @@ hi DiffDelete guibg=NONE guifg=#e76d6d gui=NONE
 hi DiffChange guibg=NONE guifg=#dfc56d gui=NONE
 hi DiffText guibg=NONE guifg=#dfc56d gui=NONE
 hi Pmenu guibg=#373737 guifg=#dfdfdf gui=NONE
-hi PmenuSel guibg=#dfc56d guifg=#212121 gui=NONE
+hi PmenuSel guibg=#83a598 guifg=#212121 gui=NONE
 hi PmenuSbar guibg=#373737 guifg=#88c563 gui=NONE
-hi PmenuThumb guibg=#dfdfdf guifg=#dfc56d gui=NONE
+hi PmenuThumb guibg=#dfdfdf guifg=#83a598 gui=NONE
 hi SpellBad guibg=NONE guifg=#e76d6d gui=UNDERCURL
 hi SpellCap guibg=NONE guifg=#dfc56d gui=UNDERCURL
 hi SpellLocal guibg=NONE guifg=#dfc56d gui=UNDERCURL
@@ -82,3 +82,4 @@ hi link vimUserFunc Function
 hi link javaScriptValue Constant
 hi link javaScriptNumber javaScriptValue
 hi link javaScriptNull javaScriptValue
+hi link QuickFixLine PmenuSel
