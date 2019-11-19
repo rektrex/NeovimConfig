@@ -146,8 +146,27 @@ call lsp#add_filetype_config({
     \ 'plugins': {
     \   'jedi_hover': { 'enabled': v:true, },
     \   'jedi_completion': { 'enabled': v:true, },
-    \ },
-    \ })
+    \   'jedi_references': { 'enabled': v:true, },
+    \   'jedi_signature_help': { 'enabled': v:true, },
+    \   'jedi_symbols': {
+    \       'enabled': v:true,
+    \       'all_scopes': v:true,
+    \   },
+    \   'mccabe': {
+    \       'enabled': v:true,
+    \       'threshold': 15,
+    \   },
+    \   'preload': { 'enabled': v:true, },
+    \   'pycodestyle': { 'enabled': v:true, },
+    \   'pydocstyle': {
+    \       'enabled': v:true,
+    \       'match': "(?!test_).*\\.py",
+    \       'matchDir': '[^\\.].*',
+    \   },
+    \   'pyflakes': { 'enabled': v:true, },
+    \   'rope_completion': { 'enabled': v:true, },
+    \   'yapf': { 'enabled': v:true, },
+    \ }})
 
 "set title of the window
 autocmd BufEnter * let &titlestring = ' ' . expand(@%)
