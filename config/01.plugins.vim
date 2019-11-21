@@ -2,6 +2,6 @@
 call plug#begin()
 
 Plug 'tpope/vim-commentary'
-Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'lifepillar/vim-mucomplete'
 
 call plug#end()

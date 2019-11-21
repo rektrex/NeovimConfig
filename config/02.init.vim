@@ -239,3 +239,5 @@ inoremap [<Space> [<Space><Space>]<Left><Left>
 inoremap {; {<Space><Space>};<Left><Left><Left>
 inoremap [; [<Space><Space>];<Left><Left><Left>
 inoremap (; ();<Left><Left>
+
+set omnifunc=lsp#omnifunc
