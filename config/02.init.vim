@@ -126,10 +126,16 @@ nnoremap <leader>Q :q!<CR>
 "json comments syntax highlighting
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
+" call lsp#add_filetype_config({
+"     \ 'filetype': 'rust',
+"     \ 'name': 'ra_lsp_server',
+"     \ 'cmd': 'ra_lsp_server',
+"     \ })
+
 call lsp#add_filetype_config({
     \ 'filetype': 'rust',
-    \ 'name': 'ra_lsp_server',
-    \ 'cmd': 'ra_lsp_server',
+    \ 'name': 'rls',
+    \ 'cmd': 'rls',
     \ })
 
 call lsp#add_filetype_config({
