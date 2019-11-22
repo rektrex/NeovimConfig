@@ -15,4 +15,5 @@ imap <unique> <C-p> <plug>(MUcompleteBwd)
 imap <unique> <C-j> <plug>(MUcompleteCycFwd)
 imap <unique> <C-k> <plug>(MUcompleteCycBwd)
 
+"quick-scope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
