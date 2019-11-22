@@ -17,3 +17,8 @@ imap <unique> <C-k> <plug>(MUcompleteCycBwd)
 
 "quick-scope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+"targets.vim
+autocmd User targets#mappings#user call targets#mappings#extend({
+    \ 'b': {'pair': [{'o':'(', 'c':')'}, {'o':'[', 'c':']'}, {'o':'{', 'c':'}'}, {'o':'<', 'c':'>'}]},
+    \ })
