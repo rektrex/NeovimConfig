@@ -83,3 +83,6 @@ hi link javaScriptValue Constant
 hi link javaScriptNumber javaScriptValue
 hi link javaScriptNull javaScriptValue
 hi link QuickFixLine PmenuSel
+
+" markdown
+hi markdownerror guifg=#dfdfdf
