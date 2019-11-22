@@ -199,6 +199,17 @@ nnoremap <leader>g :silent grep!<Space>
 command! Cnext try | cnext | catch | cfirst | catch | endtry
 command! Cprev try | cprev | catch | clast | catch | endtry
 
+"filter quickfix results, call QFilter pattern to filter, QFilter! pattern to
+"remove matching items
+function! s:FilterQuickfixList(bang, pattern)
+  let cmp = a:bang ? '!~#' : '=~#'
+  call setqflist(filter(getqflist(), "bufname(v:val['bufnr']) " . cmp . " a:pattern"))
+endfunction
+command! -bang -nargs=1 -complete=file QFilter call s:FilterQuickfixList(<bang>0, <q-args>)
+
+nnoremap <C-f> :QFilter<Space>
+nnoremap <C-h> :silent colder<CR>
+
 "wisdom from romainl's answer here: https://stackoverflow.com/questions/16082991/vim-switching-between-files-rapidly-using-vanilla-vim-no-plugins
 
 "list all buffers, and wait for input to switch to a buffer
