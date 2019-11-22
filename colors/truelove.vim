@@ -12,7 +12,7 @@ set background=dark
 
 hi Normal guibg=#212121 guifg=#dfdfdf gui=NONE
 hi Cursor guibg=#c8c8c8 guifg=NONE gui=NONE
-hi Title guibg=NONE guifg=#dfdfdf gui=BOLDUNDERLINE
+hi Title guibg=NONE guifg=#dfdfdf gui=UNDERLINE
 hi Comment guibg=NONE guifg=#6f6f6f gui=NONE
 hi SpecialComment guibg=NONE guifg=BROWN gui=NONE
 hi Todo guibg=NONE guifg=BROWN gui=UNDERLINE
@@ -23,13 +23,13 @@ hi SignColumn guibg=NONE guifg=NONE gui=NONE
 hi Underlined guibg=NONE guifg=NONE gui=UNDERLINE
 hi Visual guibg=#212121 guifg=#6f6f6f gui=UNDERLINE
 hi VisualNOS guibg=NONE guifg=NONE gui=UNDERLINE
-hi MatchParen guibg=#83a598 guifg=#212121 gui=BOLD
+hi MatchParen guibg=#83a598 guifg=#212121 gui=NONE
 hi IncSearch guibg=#dfc56d guifg=#212121 gui=NONE
 hi Search guibg=#dfc56d guifg=#212121 gui=NONE
 hi CursorColumn guibg=NONE guifg=NONE gui=NONE
 hi CursorLine guibg=#373737 guifg=NONE gui=NONE
-hi VertSplit guibg=NONE guifg=#dfdfdf gui=BOLD
-hi WildMenu guibg=NONE guifg=#88c563 gui=BOLDUNDERLINE
+hi VertSplit guibg=NONE guifg=#dfdfdf gui=NONE
+hi WildMenu guibg=NONE guifg=#88c563 gui=UNDERLINE
 hi DiffAdd guibg=NONE guifg=#88c563 gui=NONE
 hi DiffDelete guibg=NONE guifg=#e76d6d gui=NONE
 hi DiffChange guibg=NONE guifg=#dfc56d gui=NONE
