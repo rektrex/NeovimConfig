@@ -9,3 +9,4 @@ EOF
 nnoremap <silent>K :call lsp#text_document_hover()<CR>
 nnoremap <silent> <leader>e :lua line_diagnostics()<CR>
 nnoremap <silent>gd :call lsp#text_document_definition()<CR>
+inoremap <silent><C-s> <Space><Esc>:call lsp#text_document_signature_help()<CR>i
