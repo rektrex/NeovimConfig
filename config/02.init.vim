@@ -140,8 +140,8 @@ call lsp#add_filetype_config({
 
 call lsp#add_filetype_config({
     \ 'filetype': 'haskell',
-    \ 'name': 'hie',
-    \ 'cmd': 'hie-wrapper',
+    \ 'name': 'ghcide',
+    \ 'cmd': 'ghcide --lsp',
     \ })
 
 call lsp#add_filetype_config({
