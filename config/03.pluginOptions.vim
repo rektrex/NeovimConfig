@@ -14,3 +14,5 @@ imap <unique> <C-n> <plug>(MUcompleteFwd)
 imap <unique> <C-p> <plug>(MUcompleteBwd)
 imap <unique> <C-j> <plug>(MUcompleteCycFwd)
 imap <unique> <C-k> <plug>(MUcompleteCycBwd)
+
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']

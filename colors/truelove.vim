@@ -84,5 +84,7 @@ hi link javaScriptNumber javaScriptValue
 hi link javaScriptNull javaScriptValue
 hi link QuickFixLine PmenuSel
 
-" markdown
-hi markdownerror guifg=#dfdfdf
+" quick-scope----------------------------------------------------------------
+
+hi QuickScopePrimary guibg=NONE guifg=#88c563 gui=UNDERLINE
+hi QuickScopeSecondary guibg=NONE guifg=#dfc56d gui=UNDERLINE
