@@ -195,6 +195,10 @@ augroup END
 "mapping to do a silent grep
 nnoremap <leader>g :silent grep!<Space>
 
+"make :cnext and :cprev loop
+command! Cnext try | cnext | catch | cfirst | catch | endtry
+command! Cprev try | cprev | catch | clast | catch | endtry
+
 "wisdom from romainl's answer here: https://stackoverflow.com/questions/16082991/vim-switching-between-files-rapidly-using-vanilla-vim-no-plugins
 
 "list all buffers, and wait for input to switch to a buffer
@@ -228,8 +232,8 @@ nnoremap <silent> <C-j> :bnext<CR>
 nnoremap <silent> <C-k> :bprev<CR>
 
 "move to prev and next items in the quickfix list
-nnoremap <silent> <C-n> :cn<CR>
-nnoremap <silent> <C-p> :cp<CR>
+nnoremap <silent> <C-n> :Cnext<CR>
+nnoremap <silent> <C-p> :Cprev<CR>
 
 "shortcut to open quickfix list
 nnoremap <silent> gq :cw<CR>
