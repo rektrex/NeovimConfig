@@ -12,7 +12,7 @@ set background=dark
 
 hi Normal guibg=#212121 guifg=#dfdfdf gui=NONE
 hi Cursor guibg=#c8c8c8 guifg=NONE gui=NONE
-hi Title guibg=NONE guifg=#dfdfdf gui=UNDERLINE
+hi Title guibg=NONE guifg=#dfdfdf gui=BOLDUNDERLINE
 hi Comment guibg=NONE guifg=#6f6f6f gui=NONE
 hi SpecialComment guibg=NONE guifg=BROWN gui=NONE
 hi Todo guibg=NONE guifg=BROWN gui=UNDERLINE
@@ -23,13 +23,13 @@ hi SignColumn guibg=NONE guifg=NONE gui=NONE
 hi Underlined guibg=NONE guifg=NONE gui=UNDERLINE
 hi Visual guibg=#212121 guifg=#6f6f6f gui=UNDERLINE
 hi VisualNOS guibg=NONE guifg=NONE gui=UNDERLINE
-hi MatchParen guibg=#83a598 guifg=#212121 gui=NONE
+hi MatchParen guibg=#83a598 guifg=#212121 gui=BOLD
 hi IncSearch guibg=#dfc56d guifg=#212121 gui=NONE
 hi Search guibg=#dfc56d guifg=#212121 gui=NONE
 hi CursorColumn guibg=NONE guifg=NONE gui=NONE
 hi CursorLine guibg=#373737 guifg=NONE gui=NONE
-hi VertSplit guibg=NONE guifg=#dfdfdf gui=NONE
-hi WildMenu guibg=NONE guifg=#88c563 gui=UNDERLINE
+hi VertSplit guibg=NONE guifg=#dfdfdf gui=BOLD
+hi WildMenu guibg=NONE guifg=#88c563 gui=BOLDUNDERLINE
 hi DiffAdd guibg=NONE guifg=#88c563 gui=NONE
 hi DiffDelete guibg=NONE guifg=#e76d6d gui=NONE
 hi DiffChange guibg=NONE guifg=#dfc56d gui=NONE
@@ -53,6 +53,7 @@ hi NonText guibg=NONE guifg=#e76d6d gui=NONE
 hi SpecialKey guibg=NONE guifg=#e76d6d gui=UNDERCURL
 hi Statusline guibg=#373737 guifg=NONE gui=NONE
 hi StatuslineNC guibg=#373737 guifg=NONE gui=NONE
+hi link QuickFixLine PmenuSel
 
 " clear & override-----------------------------------------------------------
 
@@ -77,12 +78,15 @@ hi link typeScriptParens Delimiter
 
 hi link vimUserFunc Function
 
+" xdefaults------------------------------------------------------------------
+
+hi link xdefaultsPunct xdefaultsLabel
+
 " javaScript-----------------------------------------------------------------
 
 hi link javaScriptValue Constant
 hi link javaScriptNumber javaScriptValue
 hi link javaScriptNull javaScriptValue
-hi link QuickFixLine PmenuSel
 
 " quick-scope----------------------------------------------------------------
 
