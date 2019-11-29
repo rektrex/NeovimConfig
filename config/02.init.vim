@@ -126,54 +126,6 @@ nnoremap <silent> <leader>Q :q!<CR>
 "json comments syntax highlighting
 autocmd FileType json syntax match Comment +\/\/.\+$+
 
-" call lsp#add_filetype_config({
-"     \ 'filetype': 'rust',
-"     \ 'name': 'ra_lsp_server',
-"     \ 'cmd': 'ra_lsp_server',
-"     \ })
-
-call lsp#add_filetype_config({
-    \ 'filetype': 'rust',
-    \ 'name': 'rls',
-    \ 'cmd': 'rls',
-    \ })
-
-call lsp#add_filetype_config({
-    \ 'filetype': 'haskell',
-    \ 'name': 'ghcide',
-    \ 'cmd': 'ghcide --lsp',
-    \ })
-
-call lsp#add_filetype_config({
-    \ 'filetype': 'python',
-    \ 'name': 'pyls',
-    \ 'cmd': 'pyls',
-    \ 'enable': v:true,
-    \ 'plugins': {
-    \   'jedi_hover': { 'enabled': v:true, },
-    \   'jedi_completion': { 'enabled': v:true, },
-    \   'jedi_references': { 'enabled': v:true, },
-    \   'jedi_signature_help': { 'enabled': v:true, },
-    \   'jedi_symbols': {
-    \       'enabled': v:true,
-    \       'all_scopes': v:true,
-    \   },
-    \   'mccabe': {
-    \       'enabled': v:true,
-    \       'threshold': 15,
-    \   },
-    \   'preload': { 'enabled': v:true, },
-    \   'pycodestyle': { 'enabled': v:true, },
-    \   'pydocstyle': {
-    \       'enabled': v:true,
-    \       'match': "(?!test_).*\\.py",
-    \       'matchDir': '[^\\.].*',
-    \   },
-    \   'pyflakes': { 'enabled': v:true, },
-    \   'rope_completion': { 'enabled': v:true, },
-    \   'yapf': { 'enabled': v:true, },
-    \ }})
-
 "set title of the window
 autocmd BufEnter * let &titlestring = ' ' . expand(@%)
 set title
@@ -260,7 +212,3 @@ inoremap [<Space> [<Space><Space>]<Left><Left>
 inoremap {; {<Space><Space>};<Left><Left><Left>
 inoremap [; [<Space><Space>];<Left><Left><Left>
 inoremap (; ();<Left><Left>
-
-"omnifunc
-set omnifunc=syntaxcomplete#Complete
-autocmd Filetype python,haskell,rust setl omnifunc=lsp#omnifunc
