@@ -7,5 +7,6 @@ Plug 'unblevable/quick-scope'
 Plug 'coderifous/textobj-word-column.vim'
 Plug 'wellle/targets.vim'
 Plug 'neovim/nvim-lsp'
+Plug '~/Projects/Vim/truelove.vim'
 
 call plug#end()

@@ -42,10 +42,9 @@ set noshowmatch "don't jump to matching pair
 
 set lazyredraw
 
-if has('nvim') || has('termguicolors')
-    set termguicolors
-    colorscheme truelove
-endif
+"colorscheme
+set notermguicolors
+colorscheme truelove
 
 set guicursor=
 
