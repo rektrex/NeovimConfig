@@ -1,9 +1,0 @@
-increment a visual block: <count>g<c-a>
-    1       1
-    1   ->  2
-    1       3
-    1       4
-
-:r!seq N generate numbers from 1 to N separated by newline
-
-use ]p to paste with automatic indentation
