@@ -7,6 +7,7 @@ Plug 'unblevable/quick-scope'
 Plug 'coderifous/textobj-word-column.vim'
 Plug 'wellle/targets.vim'
 Plug 'neovim/nvim-lsp'
+Plug 'neovimhaskell/haskell-vim'
 Plug '~/Projects/Vim/truelove.vim'
 
 call plug#end()
@@ -35,6 +36,17 @@ let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 autocmd User targets#mappings#user call targets#mappings#extend({
     \ 'b': {'pair': [{'o':'(', 'c':')'}, {'o':'[', 'c':']'}, {'o':'{', 'c':'}'}, {'o':'<', 'c':'>'}]},
     \ })
+
+"haskell-vim
+let g:haskell_indent_if = 3
+let g:haskell_indent_case = 2
+let g:haskell_indent_let = 4
+let g:haskell_indent_where = 6
+let g:haskell_indent_before_where = 2
+let g:haskell_indent_after_bare_where = 2
+let g:haskell_indent_do = 3
+let g:haskell_indent_in = 1
+let g:haskell_indent_guard = 2
 
 "leader key
 let mapleader="\<Space>"
