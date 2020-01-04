@@ -8,6 +8,7 @@ Plug 'coderifous/textobj-word-column.vim'
 Plug 'wellle/targets.vim'
 Plug 'neovim/nvim-lsp'
 Plug 'neovimhaskell/haskell-vim'
+Plug 'romainl/vim-cool'
 Plug '~/Projects/Vim/truelove.vim'
 
 call plug#end()
