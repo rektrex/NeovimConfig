@@ -10,6 +10,7 @@ Plug 'neovim/nvim-lsp'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'romainl/vim-cool'
 Plug '~/Projects/Vim/truelove.vim'
+Plug '~/Projects/Vim/delek_custom'
 
 call plug#end()
 
@@ -21,7 +22,7 @@ let g:netrw_dirhistmax = 0
 
 "mucomplete
 let g:mucomplete#enable_auto_at_startup = 1
-let g:mucomplete#minimum_prefix_length = 0
+let g:mucomplete#minimum_prefix_length = 1
 
 "quick-scope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
@@ -88,7 +89,7 @@ set lazyredraw
 
 "colorscheme
 set notermguicolors
-colorscheme truelove
+colorscheme delek_custom
 
 set guicursor=
 
