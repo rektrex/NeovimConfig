@@ -93,8 +93,6 @@ colorscheme delek_custom
 
 set guicursor=
 
-set updatetime=300 "for coc.nvim
-
 set shortmess+=acW "remove/modify some messages
 
 set signcolumn=no "don't display sign column
