@@ -257,6 +257,9 @@ lua << EOF
     nvim_lsp.pyls.setup({})
     nvim_lsp.rls.setup({})
     nvim_lsp.ghcide.setup({})
+    nvim_lsp.sumneko_lua.setup({
+        cmd = { "/home/rektrex/Downloads/lua-language-server/bin/Linux/lua-language-server", "-E", "/home/rektrex/Downloads/lua-language-server/main.lua" }
+    })
 
     function line_diagnostics()
         util.show_line_diagnostics()
@@ -270,4 +273,4 @@ inoremap <silent><C-s> <Space><Esc>:lua vim.lsp.buf.signature_help()<CR>i
 
 "omnifunc
 set omnifunc=syntaxcomplete#Complete
-autocmd Filetype python,haskell,rust setl omnifunc=v:lua.vim.lsp.omnifunc
+autocmd Filetype python,haskell,rust,lua setl omnifunc=v:lua.vim.lsp.omnifunc
