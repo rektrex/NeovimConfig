@@ -149,6 +149,7 @@ nnoremap <leader>X "+X
 "Autocomplete settings
 set completeopt+=menuone "show completion menu even when there is only one match
 set completeopt+=noinsert
+set completeopt+=noselect
 set completeopt-=preview
 
 "Tap jk to escape to normal mode
