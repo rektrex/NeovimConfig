@@ -267,18 +267,10 @@ lua << EOF
     end
 EOF
 
-nnoremap <silent>K :call <SID>show_documentation()<CR>
+nnoremap <silent>K :ShowDocumentation<CR>
 nnoremap <silent> <leader>e :lua line_diagnostics()<CR>
 nnoremap <silent>gd :lua vim.lsp.buf.definition()<CR>
 inoremap <silent><C-s> <Space><Esc>:lua vim.lsp.buf.signature_help()<CR>i
-
-function! s:show_documentation()
-    if (index(['vim', 'help'], &filetype) >= 0)
-        execute 'h '.expand('<cword>')
-    else
-        execute 'lua vim.lsp.buf.hover()'
-    endif
-endfunction
 
 "omnifunc
 set omnifunc=syntaxcomplete#Complete
