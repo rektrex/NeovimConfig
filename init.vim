@@ -250,6 +250,8 @@ inoremap (; ();<Left><Left>
 
 nnoremap <silent> <leader>S : call SynGroup()<CR>
 
+set tildeop
+
 "LSP
 lua << EOF
     local nvim_lsp = require 'nvim_lsp'
