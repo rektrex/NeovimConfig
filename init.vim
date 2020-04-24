@@ -258,7 +258,7 @@ lua << EOF
     local util = require 'vim.lsp.util'
 
     nvim_lsp.pyls.setup({})
-    nvim_lsp.rls.setup({})
+    nvim_lsp.rust_analyzer.setup({})
     nvim_lsp.ghcide.setup({})
     nvim_lsp.sumneko_lua.setup({
         cmd = { "/home/rektrex/Downloads/lua-language-server/bin/Linux/lua-language-server", "-E", "/home/rektrex/Downloads/lua-language-server/main.lua" }
