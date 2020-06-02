@@ -9,7 +9,7 @@ Plug 'wellle/targets.vim'
 Plug 'neovim/nvim-lsp'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'romainl/vim-cool'
-Plug '~/Projects/Vim/truelove.vim'
+Plug 'junegunn/vim-easy-align'
 Plug '~/Projects/Vim/delek_custom'
 
 call plug#end()
@@ -42,6 +42,10 @@ let g:haskell_indent_after_bare_where = 2
 let g:haskell_indent_do = 3
 let g:haskell_indent_in = 1
 let g:haskell_indent_guard = 2
+
+"vim-easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
 
 "leader key
 let mapleader="\<Space>"
