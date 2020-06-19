@@ -11,6 +11,7 @@ Plug 'neovimhaskell/haskell-vim'
 Plug 'romainl/vim-cool'
 Plug 'junegunn/vim-easy-align'
 Plug '~/Projects/Vim/delek_custom'
+Plug 'andreypopp/vim-colors-plain'
 
 call plug#end()
 
@@ -92,8 +93,9 @@ set noshowmatch "don't jump to matching pair
 set lazyredraw
 
 "colorscheme
-set notermguicolors
-colorscheme delek_custom
+" set notermguicolors
+set background=dark
+colorscheme plain
 
 set guicursor=
 
