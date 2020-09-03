@@ -2,7 +2,6 @@
 call plug#begin()
 
 Plug 'tpope/vim-commentary'
-Plug 'lifepillar/vim-mucomplete'
 Plug 'unblevable/quick-scope'
 Plug 'coderifous/textobj-word-column.vim'
 Plug 'wellle/targets.vim'
@@ -12,6 +11,8 @@ Plug 'romainl/vim-cool'
 Plug 'junegunn/vim-easy-align'
 Plug '~/Projects/Vim/delek_custom'
 Plug 'andreypopp/vim-colors-plain'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete-lsp'
 
 call plug#end()
 
@@ -21,9 +22,11 @@ autocmd FileType xdefaults setlocal commentstring=!\ %s
 "netrw
 let g:netrw_dirhistmax = 0
 
-"mucomplete
-let g:mucomplete#enable_auto_at_startup = 1
-let g:mucomplete#minimum_prefix_length = 1
+"deoplete
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option({
+    \ 'camel_case': v:true,
+    \ })
 
 "quick-scope
 let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
@@ -266,9 +269,6 @@ lua << EOF
     nvim_lsp.pyls.setup({})
     nvim_lsp.rust_analyzer.setup({})
     nvim_lsp.ghcide.setup({})
-    nvim_lsp.sumneko_lua.setup({
-        cmd = { "/home/rektrex/Downloads/lua-language-server/bin/Linux/lua-language-server", "-E", "/home/rektrex/Downloads/lua-language-server/main.lua" }
-    })
 
     function line_diagnostics()
         util.show_line_diagnostics()
@@ -279,7 +279,3 @@ nnoremap <silent>K :ShowDocumentation<CR>
 nnoremap <silent> <leader>e :lua line_diagnostics()<CR>
 nnoremap <silent>gd :lua vim.lsp.buf.definition()<CR>
 inoremap <silent><C-s> <Space><Esc>:lua vim.lsp.buf.signature_help()<CR>i
-
-"omnifunc
-set omnifunc=syntaxcomplete#Complete
-autocmd Filetype python,haskell,rust,lua setl omnifunc=v:lua.vim.lsp.omnifunc
