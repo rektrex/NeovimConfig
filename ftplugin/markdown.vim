@@ -1,0 +1,12 @@
+abbrev info information
+abbrev adn and
+abbrev syst system
+abbrev imp important
+abbrev msg message
+abbrev msmnt measurement
+abbrev msmnts measurements
+abbrev ress results
+abbrev dlv deliver
+abbrev dlvd delivered
+abbrev phy physical
+abbrev eval evaluate
