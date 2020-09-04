@@ -6,6 +6,7 @@ Plug 'unblevable/quick-scope'
 Plug 'coderifous/textobj-word-column.vim'
 Plug 'wellle/targets.vim'
 Plug 'neovim/nvim-lsp'
+Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'romainl/vim-cool'
 Plug 'junegunn/vim-easy-align'
@@ -299,3 +300,80 @@ inoremap <silent><C-s> <Space><Esc>:lua vim.lsp.buf.signature_help()<CR>i
 "Terminal mappings
 tnoremap <Esc> <C-\><C-n>
 tnoremap <expr> <C-R> '<C-\><C-N>"'.nr2char(getchar()).'pi'
+
+"Treesitter
+lua << EOF
+    require'nvim-treesitter.configs'.setup {
+        ensure_installed = { "python", "c", "cpp", "java", "javascript", "json", "go" },
+        highlight = {
+            enable = true,
+        },
+        incremental_selection = {
+            enable = true,
+            keymaps = {
+                init_selection = "gnn",
+                node_incremental = "grn",
+                scope_incremental = "grc",
+                node_decremental = "grm",
+            },
+        },
+        refactor = {
+            highlight_definitions = { enable = true },
+            highlight_current_scope = { enable = true },
+            smart_rename = {
+                enable = true,
+                keymaps = {
+                    smart_rename = "grr",
+                },
+            },
+            navigation = {
+                enable = true,
+                keymaps = {
+                    goto_definition_lsp_fallback = "gnd",
+                    list_definitions = "gnD",
+                    goto_next_usage = "<a-*>",
+                    goto_previous_usage = "<a-#>",
+                },
+            },
+        },
+        textobjects = {
+            select = {
+                enable = true,
+                keymaps = {
+                    ["af"] = "@function.outer",
+                    ["if"] = "@function.inner",
+                    ["ac"] = "@class.outer",
+                    ["ic"] = "@class.inner",
+                },
+            },
+            swap = {
+                enable = true,
+                swap_next = {
+                    ["<leader>a"] = "@parameter.inner",
+                },
+                swap_previous = {
+                    ["<leader>A"] = "@parameter.inner",
+                },
+            },
+            move = {
+                enable = true,
+                goto_next_start = {
+                    ["]m"] = "@function.outer",
+                    ["]]"] = "@class.outer",
+                },
+                goto_next_end = {
+                    ["]M"] = "@function.outer",
+                    ["]["] = "@class.outer",
+                },
+                goto_previous_start = {
+                    ["[m"] = "@function.outer",
+                    ["[["] = "@class.outer",
+                },
+                goto_previous_end = {
+                    ["[M"] = "@function.outer",
+                    ["[]"] = "@class.outer",
+                },
+            },
+        },
+    }
+EOF
