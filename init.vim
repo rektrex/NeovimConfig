@@ -9,7 +9,6 @@ Plug 'neovim/nvim-lsp'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'romainl/vim-cool'
 Plug 'junegunn/vim-easy-align'
-Plug '~/Projects/Vim/delek_custom'
 Plug 'andreypopp/vim-colors-plain'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-lsp'
@@ -87,7 +86,13 @@ set noshowmode
 
 set noruler
 
-set laststatus=0
+set laststatus=2
+set statusline=
+set statusline+=\ %t
+set statusline+=%m\ 
+set statusline+=%=
+set statusline+=\ %y
+set statusline+=\ %l,%c\ 
 
 set cursorline
 
@@ -96,9 +101,16 @@ set noshowmatch "don't jump to matching pair
 set lazyredraw
 
 "colorscheme
-" set notermguicolors
+set termguicolors
+augroup colorscheme
+    hi Statusline gui=UNDERLINE
+    autocmd! Colorscheme * highlight Statusline guibg=NONE
+augroup end
 set background=dark
 colorscheme plain
+
+" don't fill EoB with '~'
+let &fcs='eob: '
 
 set guicursor=
 
