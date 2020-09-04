@@ -12,6 +12,7 @@ Plug 'junegunn/vim-easy-align'
 Plug 'andreypopp/vim-colors-plain'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-lsp'
+Plug 'vimlab/split-term.vim'
 
 call plug#end()
 
@@ -49,6 +50,9 @@ let g:haskell_indent_guard = 2
 "vim-easy-align
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+"split-term
+let g:disable_key_mappings = v:true
 
 "leader key
 let mapleader="\<Space>"
