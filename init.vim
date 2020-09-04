@@ -87,7 +87,7 @@ set noshowmode
 
 set noruler
 
-set laststatus=2
+set laststatus=0
 
 set cursorline
 
