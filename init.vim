@@ -2,7 +2,6 @@
 call plug#begin()
 
 Plug 'tpope/vim-commentary'
-Plug 'unblevable/quick-scope'
 Plug 'coderifous/textobj-word-column.vim'
 Plug 'wellle/targets.vim'
 Plug 'neovim/nvim-lsp'
@@ -28,9 +27,6 @@ let g:deoplete#enable_at_startup = 1
 call deoplete#custom#option({
     \ 'camel_case': v:true,
     \ })
-
-"quick-scope
-let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
 
 "targets.vim
 autocmd User targets#mappings#user call targets#mappings#extend({
@@ -108,7 +104,6 @@ set lazyredraw
 "colorscheme
 set termguicolors
 augroup colorscheme
-    hi Statusline gui=UNDERLINE
     autocmd! Colorscheme * highlight Statusline guibg=NONE
 augroup end
 set background=dark
