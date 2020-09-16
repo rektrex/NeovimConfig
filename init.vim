@@ -4,7 +4,7 @@ call plug#begin()
 Plug 'tpope/vim-commentary'
 Plug 'coderifous/textobj-word-column.vim'
 Plug 'wellle/targets.vim'
-Plug 'neovim/nvim-lsp'
+Plug 'neovim/nvim-lspconfig'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'neovimhaskell/haskell-vim'
 Plug 'romainl/vim-cool'
