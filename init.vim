@@ -290,7 +290,7 @@ EOF
 nnoremap <silent>K :ShowDocumentation<CR>
 nnoremap <silent> <leader>e :lua line_diagnostics()<CR>
 nnoremap <silent>gd :lua vim.lsp.buf.definition()<CR>
-inoremap <silent><C-s> <Space><Esc>:lua vim.lsp.buf.signature_help()<CR>i
+inoremap <silent><C-s> <Space><Esc>:lua vim.lsp.buf.signature_help()<CR><del>a
 
 "Terminal mappings
 tnoremap <Esc> <C-\><C-n>
