@@ -275,13 +275,12 @@ set tildeop
 
 "LSP
 lua << EOF
-    local nvim_lsp = require 'nvim_lsp'
+    local nvim_lsp = require 'lspconfig'
     local util = require 'vim.lsp.util'
 
     nvim_lsp.pyls.setup({})
     nvim_lsp.rust_analyzer.setup({})
     nvim_lsp.ghcide.setup({})
-    nvim_lsp.jdtls.setup({})
 
     function line_diagnostics()
         util.show_line_diagnostics()
