@@ -13,6 +13,7 @@ Plug 'andreypopp/vim-colors-plain'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-lsp'
 Plug 'vimlab/split-term.vim'
+Plug 'nathanalderson/yang.vim'
 
 call plug#end()
 
