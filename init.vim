@@ -282,6 +282,7 @@ lua << EOF
     nvim_lsp.pyls.setup({})
     nvim_lsp.rust_analyzer.setup({})
     nvim_lsp.ghcide.setup({})
+    nvim_lsp.tsserver.setup({})
 
     function line_diagnostics()
         util.show_line_diagnostics()
