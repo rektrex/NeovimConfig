@@ -280,9 +280,7 @@ lua << EOF
     local util = require 'vim.lsp.util'
 
     nvim_lsp.pyls.setup({})
-    nvim_lsp.rust_analyzer.setup({})
     nvim_lsp.ghcide.setup({})
-    nvim_lsp.tsserver.setup({})
 
     function line_diagnostics()
         util.show_line_diagnostics()
@@ -301,7 +299,7 @@ tnoremap <expr> <C-R> '<C-\><C-N>"'.nr2char(getchar()).'pi'
 "Treesitter
 lua << EOF
     require'nvim-treesitter.configs'.setup {
-        ensure_installed = { "python", "c", "cpp", "java", "javascript", "json", "go" },
+        ensure_installed = { "python", "c", "cpp", "java", "json" },
         highlight = {
             enable = true,
         },
