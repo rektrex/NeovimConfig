@@ -113,7 +113,7 @@ colorscheme plain
 " don't fill EoB with '~'
 let &fcs='eob: '
 
-set guicursor=
+set guicursor=n-v-c:hor25,i-ci-r-cr:ver25
 
 set shortmess+=acW "remove/modify some messages
 
