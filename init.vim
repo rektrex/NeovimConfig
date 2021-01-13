@@ -5,7 +5,7 @@ Plug 'tpope/vim-commentary'
 Plug 'coderifous/textobj-word-column.vim'
 Plug 'wellle/targets.vim'
 Plug 'neovim/nvim-lspconfig'
-Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-treesitter/nvim-treesitter', {'do': 'TSUpdate'}
 Plug 'neovimhaskell/haskell-vim'
 Plug 'romainl/vim-cool'
 Plug 'junegunn/vim-easy-align'
