@@ -278,12 +278,13 @@ set tildeop
 lua << EOF
     local nvim_lsp = require 'lspconfig'
     local util = require 'vim.lsp.util'
+    local diagnostic = require 'vim.lsp.diagnostic'
 
     nvim_lsp.pyls.setup({})
     nvim_lsp.ghcide.setup({})
 
     function line_diagnostics()
-        util.show_line_diagnostics()
+        diagnostic.show_line_diagnostics()
     end
 EOF
 
